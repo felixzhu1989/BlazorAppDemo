@@ -5,7 +5,7 @@
 
 
 @*应用的新标头导航*@
-<div class="top-bar">
+@*<div class="top-bar">
     <a class="logo" href="">
         <img src="img/logo.svg" />
     </a>
@@ -19,7 +19,7 @@
         <img src="img/bike.svg" />
         <div>My Orders</div>
     </NavLink>
-</div>
+</div>*@
 
 
 <div class="main">
@@ -61,7 +61,12 @@
         var response = await HttpClient.PostAsJsonAsync(NavigationManager.BaseUri + "orders", OrderState.Order);
         var newOrderId= await response.Content.ReadFromJsonAsync<int>();
         OrderState.ResetOrder();
-        NavigationManager.NavigateTo("/myorders");
+        //NavigationManager.NavigateTo("/myorders");
+        NavigationManager.NavigateTo($"myorders/{newOrderId}");
     }
+
+
+
+
     
 }
