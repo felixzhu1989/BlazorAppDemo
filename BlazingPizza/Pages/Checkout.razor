@@ -23,43 +23,76 @@
 
 
 <div class="main">
-    <div class="checkout-cols">
-        <div class="checkout-order-details">
-            <h4>Review order</h4>
-            @foreach (var pizza in Order.Pizzas)
-            {
-                <p>
-                    <strong>
-                        @(pizza.Size)"
-                        @pizza.Special.Name
-                        (£@pizza.GetFormattedTotalPrice())
-                    </strong>
-                </p>
-            }
-            <p>
-                <strong>
-                    Total price:
-                    £@Order.GetFormattedTotalPrice()
-                </strong>
-            </p>
-        </div>
-    </div>
-    
-    <button class="checkout-button btn btn-warning" @onclick="PlaceOrder" disabled=@isSubmitting>
-        Place order
-    </button>
+    <EditForm Model=Order.DeliveryAddress OnSubmit=CheckSubmission>
 
+        <div class="checkout-cols">
+            @*重构引用了两个新的 Blazor 控件：OrderReview 和 AddressEditor。
+            你将用于列出比萨的旧的结账代码移至 OrderReview 组件。*@
+            <div class="checkout-order-details">
+                <h4>Review order</h4>
+                @* @foreach (var pizza in Order.Pizzas)
+                {
+                <p>
+                <strong>
+                @(pizza.Size)"
+                @pizza.Special.Name
+                (£@pizza.GetFormattedTotalPrice())
+                </strong>
+                </p>
+                }
+                <p>
+                <strong>
+                Total price:
+                £@Order.GetFormattedTotalPrice()
+                </strong>
+                </p>*@
+                <OrderReview Order="Order" />
+            </div>
+
+            <div class="checkout-delivery-address">
+                <h4>Deliver to...</h4>
+                @if (isError)
+                {
+                    <div class="alert alert-danger">Please enter a name and address.</div>
+                }
+                <AddressEditor Address="Order.DeliveryAddress" />
+            </div>
+
+        </div>
+
+        @*<button class="checkout-button btn btn-warning" @onclick="PlaceOrder" disabled=@isSubmitting>*@
+        <button class="checkout-button btn btn-warning" disabled=@isSubmitting>
+            Place order
+        </button>
+    </EditForm>
 </div>
 
 @code {
     Order Order => OrderState.Order;
     bool isSubmitting;
+    bool isError = false;
+
+
+    private async Task CheckSubmission(EditContext editContext)
+    {
+        isSubmitting = true;
+        var model = editContext.Model as Address;
+        isError = string.IsNullOrWhiteSpace(model?.Name)
+                  || string.IsNullOrWhiteSpace(model?.Line1)
+                  || string.IsNullOrWhiteSpace(model?.PostalCode);
+        if (!isError)
+        {
+            await PlaceOrder();
+        }
+        isSubmitting = false;
+    }
+
     //禁用“下单”按钮，发布将添加到 pizza.db 的 JSON，完成订单，并使用 NavigationManager 将客户重定向到主页。
     async Task PlaceOrder()
     {
-        isSubmitting = true;
+        //isSubmitting = true;
         var response = await HttpClient.PostAsJsonAsync(NavigationManager.BaseUri + "orders", OrderState.Order);
-        var newOrderId= await response.Content.ReadFromJsonAsync<int>();
+        var newOrderId = await response.Content.ReadFromJsonAsync<int>();
         OrderState.ResetOrder();
         //NavigationManager.NavigateTo("/myorders");
         NavigationManager.NavigateTo($"myorders/{newOrderId}");
@@ -68,5 +101,5 @@
 
 
 
-    
+
 }

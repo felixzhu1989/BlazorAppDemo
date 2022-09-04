@@ -1,0 +1,58 @@
+﻿<div class="form-field">
+    <label>Name:</label>
+    <div>
+        @*Blazor 指令 @ref="startName" 允许代码块创建一个 ElementReference 来引用输入元素。*@
+        @*<InputText @ref="startName" @bind-Value="Address.Name" />*@
+        <InputText @bind-Value="Address.Name" />
+    </div>
+</div>
+
+<div class="form-field">
+    <label>Line 1:</label>
+    <div>
+        <InputText @bind-Value="Address.Line1" />
+    </div>
+</div>
+
+<div class="form-field">
+    <label>Line 2:</label>
+    <div>
+        <InputText @bind-Value="Address.Line2" />
+    </div>
+</div>
+
+<div class="form-field">
+    <label>City:</label>
+    <div>
+        <InputText @bind-Value="Address.City" />
+    </div>
+</div>
+
+<div class="form-field">
+    <label>Region:</label>
+    <div>
+        <InputText @bind-Value="Address.Region" />
+    </div>
+</div>
+
+<div class="form-field">
+    <label>Postal code:</label>
+    <div>
+        <InputText @bind-Value="Address.PostalCode" />
+    </div>
+</div>
+
+@code {
+    [Parameter] public Address Address { get; set; }
+
+    /*//此代码创建 ElementReference，然后在呈现页面后将焦点设置到 Name 字段。
+    private ElementReference startName;
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender) {
+            await startName.FocusAsync();
+        }
+    }*/
+
+
+}
