@@ -2,7 +2,7 @@
 @inject OrderState OrderState
 @inject HttpClient HttpClient
 @inject NavigationManager NavigationManager
-
+@implements IDisposable
 
 @*应用的新标头导航*@
 @*<div class="top-bar">
@@ -23,7 +23,10 @@
 
 
 <div class="main">
-    <EditForm Model=Order.DeliveryAddress OnSubmit=CheckSubmission>
+    @*<EditForm Model=Order.DeliveryAddress OnSubmit=CheckSubmission>*@
+    @*<EditForm Model=Order.DeliveryAddress OnSubmit=PlaceOrder>*@
+    @*<EditForm Model=Order.DeliveryAddress OnValidSubmit=PlaceOrder OnInvalidSubmit=ShowError>*@
+    <EditForm EditContext=editContext OnValidSubmit=PlaceOrder >
 
         <div class="checkout-cols">
             @*重构引用了两个新的 Blazor 控件：OrderReview 和 AddressEditor。
@@ -61,9 +64,11 @@
         </div>
 
         @*<button class="checkout-button btn btn-warning" @onclick="PlaceOrder" disabled=@isSubmitting>*@
-        <button class="checkout-button btn btn-warning" disabled=@isSubmitting>
+        <button class="checkout-button btn btn-warning" type="submit" disabled=@isError>
             Place order
         </button>
+        @*<ValidationSummary/>*@
+        <DataAnnotationsValidator/>
     </EditForm>
 </div>
 
@@ -71,9 +76,25 @@
     Order Order => OrderState.Order;
     bool isSubmitting;
     bool isError = false;
+    private EditContext editContext;
 
+    protected override void OnInitialized()
+    {
+        editContext = new EditContext(Order.DeliveryAddress);
+        editContext.OnFieldChanged += HandleFileChanged;
+    }
 
-    private async Task CheckSubmission(EditContext editContext)
+    private void HandleFileChanged(object sender, FieldChangedEventArgs e)
+    {
+        isError = !editContext.Validate();
+        StateHasChanged();
+    }
+
+    public void Dispose()
+    {
+        editContext.OnFieldChanged -= HandleFileChanged;
+    }
+    /*private async Task CheckSubmission(EditContext editContext)
     {
         isSubmitting = true;
         var model = editContext.Model as Address;
@@ -85,11 +106,12 @@
             await PlaceOrder();
         }
         isSubmitting = false;
-    }
+    }*/
 
     //禁用“下单”按钮，发布将添加到 pizza.db 的 JSON，完成订单，并使用 NavigationManager 将客户重定向到主页。
     async Task PlaceOrder()
     {
+        //isError = false;
         //isSubmitting = true;
         var response = await HttpClient.PostAsJsonAsync(NavigationManager.BaseUri + "orders", OrderState.Order);
         var newOrderId = await response.Content.ReadFromJsonAsync<int>();
@@ -98,7 +120,10 @@
         NavigationManager.NavigateTo($"myorders/{newOrderId}");
     }
 
-
+    protected void ShowError()
+    {
+        isError = true;
+    }
 
 
 
