@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KzU/WX0exT/NTKC6jWPxziChW9r2Ok4qwUbQ0ewtfEI=",
+  "Hash": "MLQmgl4VOJyodsT28SGNUmts42tJS+QiwYlx/0vABKo=",
   "Source": "BlazorAppDemo",
   "BasePath": "_content/BlazorAppDemo",
   "Mode": "Default",
@@ -270,6 +270,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorAppDemo\\wwwroot\\js\\package.json",
+      "SourceId": "BlazorAppDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorAppDemo\\wwwroot\\",
+      "BasePath": "_content/BlazorAppDemo",
+      "RelativePath": "js/package.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\package.json"
+    },
+    {
+      "Identity": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorAppDemo\\wwwroot\\js\\package-lock.json",
+      "SourceId": "BlazorAppDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorAppDemo\\wwwroot\\",
+      "BasePath": "_content/BlazorAppDemo",
+      "RelativePath": "js/package-lock.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\package-lock.json"
     }
   ]
 }

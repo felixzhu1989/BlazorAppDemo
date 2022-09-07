@@ -34,5 +34,29 @@
     </div>
 
     <script src="_framework/blazor.server.js"></script>
+    @*名为 SweetAlert 的小型 JavaScript 库，添加如下代码，这样便可以在客户端调用 SweetAlert。*@
+<script src="https://cdn.jsdelivr.net/npm/sweetalert@latest/dist/sweetalert.min.js"></script>
+
+<script lang="javascript">
+    var objectRef;
+
+        //OrderDetail 组件在页面引用自身呈现后调用 populateObjectRef 函数。
+    window.populateObjectRef = (ref) => {
+        objectRef = ref;
+        refreshOrderStatus();
+    };
+
+        //refreshOrderStatus 函数使用此引用调用 GetOrderStatus，然后使用返回的状态字符串更新 <strong> 标记。
+    window.refreshOrderStatus = async () => {
+        var statusText = await objectRef.invokeMethodAsync('GetOrderStatus');
+        document.querySelector('#orderStatus').innerText = statusText;
+        if (statusText != "Delivered") {
+            setTimeout(function(){ refreshOrderStatus(); }, 3000);
+        } else {
+            document.querySelector('#progressSpinner').remove();
+        }
+    };
+</script>
+
 </body>
 </html>

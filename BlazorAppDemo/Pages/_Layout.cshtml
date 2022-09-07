@@ -12,6 +12,7 @@
     <link href="css/site.css" rel="stylesheet" />
     <link href="BlazorAppDemo.styles.css" rel="stylesheet" />
     <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
+    <script src="js/node_modules/plotly.js-dist/plotly.js"></script>
 </head>
 <body>
     @RenderBody()
@@ -28,5 +29,31 @@
     </div>
 
     <script src="_framework/blazor.server.js"></script>
+    <script src="js/node_modules/canvas-gauges/gauge.min.js"></script>
+
+    <script>
+        window.changeTitle = async (newTitle) => {
+            document.title = newTitle;
+        }
+
+        window.showGraph = (graphDiv, data) => {
+            var plotData = { y: data, type: 'lines' };
+            Plotly.newPlot(graphDiv, [plotData], { title: 'Celsius Temperatures by Day' });
+        }
+
+        var objectRef;
+    
+        window.populateObjectRef = (ref) => {
+            objectRef = ref;
+        };
+        
+        window.calculateAverages = async () => {
+            var averages = await objectRef.invokeMethodAsync('CalculateAveragesAsync');
+            $('#avgF').html(averages[0]);
+            $('#avgC').html(averages[1]);
+        };
+
+    </script>
+
 </body>
 </html>

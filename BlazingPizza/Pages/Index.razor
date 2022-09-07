@@ -2,6 +2,7 @@
 @inject HttpClient HttpClient
 @inject NavigationManager NavigationManager
 @inject OrderState OrderState;
+@inject IJSRuntime JsRuntime
 
 @*应用的新标头导航,active*@
 @*<div class="top-bar">
@@ -59,7 +60,8 @@
             @foreach (var configuredPizza in order.Pizzas)
             {
                 <div class="cart-item">
-                    <a @onclick="@(() => OrderState.RemoveConfiguredPizza(configuredPizza))" class="delete-item">x</a>
+                    @*<a @onclick="@(() => OrderState.RemoveConfiguredPizza(configuredPizza))" class="delete-item">x</a>*@
+                    <a @onclick="@(async () => await ShowConfirm(configuredPizza))" class="delete-item">x</a>
                     <div class="title">@(configuredPizza.Size)" @configuredPizza.Special.Name</div>
                     <div class="item-price">
                         @configuredPizza.GetFormattedTotalPrice()
@@ -98,6 +100,47 @@
     {
         specials = await HttpClient.GetFromJsonAsync<List<PizzaSpecial>>(NavigationManager.BaseUri + "specials");
     }
+    //调用 JavaScript confirm 函数。 如果客户选择“确定”，则调用 RemoveConfiguredPizza。
+    private async Task ShowConfirm(Pizza removePizza)
+    {
+        /*//JsRuntime服务器使用 InvokeAsync 方法在客户端调用 confirm 函数。
+        //显示一个标准的 JavaScript 确认对话框，选择“取消”或“确定”。
+        if (await JsRuntime.InvokeAsync<bool>(
+            "confirm", $"Do you want to remove the {removePizza.Special.Name} from your order?")) {
+                OrderState.RemoveConfiguredPizza(removePizza);
+            }*/
+
+        //更新的主要内容在于函数如何接收参数。
+        //SweetAlert 可以接受一个包含它需要的所有设置的 JSON 对象。
+        //confirm 对话框现在有两个按钮，分别表示“保留我的订单”和“删除披萨”。
+        var messageParams = new
+        {
+            title = "Are you sure?",
+            text = $"Do you want to remove the {removePizza.Special.Name}from your order?",
+            icon = "warning",
+            buttons = new
+            {
+                abort = new
+                {
+                    text = "Leave it in my order",
+                    value = false
+                },
+                confirm = new
+                {
+                    text = "Remove pizza",
+                    value = true
+                }
+            },
+            dangerMode = true
+        };
+
+        if (await JsRuntime.InvokeAsync<bool>("swal", messageParams))
+        {
+            OrderState.RemoveConfiguredPizza(removePizza);
+        }
+
+    }
+
 
 
 
@@ -126,7 +169,7 @@
             new PizzaSpecial { Name = "Margherita", BasePrice =  9.99M, Description = "Traditional Italian pizza with tomatoes and basil", ImageUrl="img/pizzas/margherita.jpg"},
             new PizzaSpecial { Name = "Basic Cheese Pizza", BasePrice =  11.99M, Description = "It's cheesy and delicious. Why wouldn't you want one?", ImageUrl="img/pizzas/cheese.jpg"},
             new PizzaSpecial { Name = "Classic pepperoni", BasePrice =  10.5M, Description = "It's the pizza you grew up with, but Blazing hot!", ImageUrl="img/pizzas/pepperoni.jpg" }
-                });
+                    });
     }*/
 
 }
