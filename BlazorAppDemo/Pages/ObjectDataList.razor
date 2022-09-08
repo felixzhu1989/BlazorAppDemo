@@ -1,0 +1,17 @@
+﻿@*创建一个模板来显示集合中的项。*@
+@*类型参数 TItem 是使用 @typeparam 指令引入的。*@
+@typeparam TItem
+@*使用 C# foreach 循环来循环访问集合并显示找到的项目。*@
+@foreach(TItem item in Data ?? Array.Empty<TItem>())
+{
+    <p>@ChildContent(item)</p>
+}
+
+
+@code {
+    [Parameter]
+    public IEnumerable<TItem> Data { get; set; }
+    //泛型 RenderFragment 参数
+    [Parameter]
+    public RenderFragment<TItem> ChildContent { get; set; }
+}

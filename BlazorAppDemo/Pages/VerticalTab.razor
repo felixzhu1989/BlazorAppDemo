@@ -1,0 +1,48 @@
+﻿@*用作垂直选项卡和显示的当前页面的容器。*@
+
+<CascadingValue Value="this">
+    @*创建一个垂直对齐的按钮集合。*@
+    <div class="row align-items-start">
+        <div class="col-2 btn-group-vertical">
+            @foreach (TabPage tabPage in Items)
+            {
+                @*这些按钮将模拟选项卡控件。 每个按钮将显示 TabPage 控件的标题
+                    onclick 事件运行模板的 ActivateItem 方法*@
+                @*@GetButtonClass(tabPage)动态指定按钮样式*@
+                <button type="button" class="btn @GetButtonClass(tabPage) text-left" style="margin-bottom: 10px;" @onclick=@(() => ActivateItem(tabPage))>
+                    @tabPage.Title
+                </button>
+            }
+        </div>
+        @*显示当前选定选项卡的页面内容。*@
+        <div class="col-md-auto card-body" style="background-color: #EBEBEB;">
+            @ChildContent
+        </div>
+    </div>
+</CascadingValue>
+
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    //CurrentItem 属性引用当前显示的页面。 这些页面都存储在项列表中。
+    public TabPage CurrentItem { get; set; }
+    private List<TabPage> Items = new List<TabPage>();
+
+    //AddItem 方法将新页面添加到 Items 集合并调用 StateHasChanged 以更新显示。
+    internal void AddItem(TabPage tabPage)
+    {
+        Items.Add(tabPage);
+        if (Items.Count == 1)
+        {
+            CurrentItem = tabPage;
+        }
+        StateHasChanged();
+    }
+    
+    //GetButtonClass 用于确定在垂直选项卡 <div> 元素中代表页面的按钮的显示方式。
+    string GetButtonClass(TabPage tabPage) => tabPage == CurrentItem ? "btn-primary" : "btn-secondary";
+    //ActivateItem 方法将指定页面设置为当前项。
+    void ActivateItem(TabPage tabPage) => CurrentItem = tabPage;
+}

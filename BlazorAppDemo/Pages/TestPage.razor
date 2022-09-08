@@ -1,0 +1,26 @@
+﻿@page "/testpage"
+@using BlazorAppDemo.Data
+@inject WeatherForecastService ForecastService
+@*使用模板ObjectDataList，将预测变量作为 Data 参数，因为Data被标记为[Parameter]*@
+<ObjectDataList Data=@forecasts>
+    @*默认省略ChildContent 
+    <ChildContent >*@
+        <h4>Date: @context.Date</h4>
+        <p>Temperature (C): @context.TemperatureC</p>
+        <p>Temperature (F): @context.TemperatureF</p>
+        <p>Summary: @context.Summary</p>
+    @*</ChildContent >*@
+</ObjectDataList>
+
+@code {
+    //forecasts赋值给Data，根据推断TItem将被赋予WeatherForecast类型
+    //在 ObjectDataList 模板组件中，参数 RenderFragment<TItem> 实际上是一个 RenderFragment<WeatherForecast>，
+    //因此 context 变量中可用的字段是在 WeatherForecast 类中定义的字段。
+    private WeatherForecast[] forecasts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        forecasts ??= await ForecastService.GetForecastAsync(DateTime.Now);
+    }
+}

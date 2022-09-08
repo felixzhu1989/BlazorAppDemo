@@ -31,8 +31,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppDemo/Pages/ObjectDataList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT2JqZWN0RGF0YUxpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppDemo/Pages/TabPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppDemo/Pages/TestPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdFBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppDemo/Pages/TestPageCard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdFBhZ2VDYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppDemo/Pages/Todo.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVG9kby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppDemo/Pages/VerticalTab.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVydGljYWxUYWIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppDemo/Shared/SurveyPrompt.razor]
