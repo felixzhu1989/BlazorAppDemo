@@ -1,0 +1,34 @@
+﻿@using BlazorAppCodingDroplets.Models
+
+<input type="checkbox" @bind="DisplayEmail" /><label>Display Email</label>
+@if (Contacts == null)
+{
+    @NullContact
+}
+else if (Contacts.Count == 0)
+{
+    @EmptyContact
+}
+else
+{
+    @foreach (var contact in Contacts)
+    {
+        <DisplayContact CurrentContact="contact"
+                        DisplayEmail="DisplayEmail"
+                        DeleteCurrentContact="DeleteContact" />
+    }
+}
+
+@code{
+    [Parameter]
+    public RenderFragment NullContact { get; set; }
+    [Parameter]
+    public RenderFragment EmptyContact { get; set; }
+    [Parameter]
+    public List<Contact> Contacts { get; set; }
+    public bool DisplayEmail { get; set; }
+    private void DeleteContact(Contact contact)
+    {
+        Contacts.Remove(contact);
+    }
+}

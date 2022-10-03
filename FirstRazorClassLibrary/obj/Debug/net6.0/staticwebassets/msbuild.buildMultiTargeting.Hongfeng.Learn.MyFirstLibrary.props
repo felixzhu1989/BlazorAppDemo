@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Hongfeng.Learn.MyFirstLibrary.props" />
+</Project>

@@ -1,0 +1,39 @@
+﻿@*代码将创建选项卡页将使用的级联值。*@
+<CascadingValue Value="this">
+    <div class="row align-items-start">
+        @*<ul> 列表将充当选项卡的导航并控制显示的选项卡页。*@
+        <ul class="nav nav-pills flex-column">
+            @foreach (TabPage tabPage in Items)
+            {
+                <li class="nav-item pb-1"><a class="nav-link @GetActiveTab(tabPage)" @onclick=@(() => ActivateItem(tabPage))>@tabPage.Title</a></li>
+            }
+        </ul>
+
+        <div class="flex-fill px-4">
+            @*@ChildContent 是来自使用此容器的组件的呈现片段。*@
+            @ChildContent
+        </div>
+    </div>
+</CascadingValue>
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    public TabPage CurrentItem { get; set; }
+    private List<TabPage> Items = new List<TabPage>();
+
+    internal void AddItem(TabPage tabPage)
+    {
+        Items.Add(tabPage);
+        if (Items.Count == 1)
+        {
+            CurrentItem = tabPage;
+        }
+        StateHasChanged();
+    }
+
+    string GetActiveTab(TabPage tabPage) => tabPage == CurrentItem ? "active bg-danger" : "bg-light";
+
+    void ActivateItem(TabPage tabPage) => CurrentItem = tabPage;
+}

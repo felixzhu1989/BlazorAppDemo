@@ -1,0 +1,25 @@
+﻿@using BlazorAppCodingDroplets.Models
+<p>
+    <b>Name:</b><span>@CurrentContact.FirstName @CurrentContact.LastName</span><br />
+    @if (DisplayEmail)
+    {
+        <b>Email:</b><span>@CurrentContact.Email</span><br />
+    }
+    @if (displayInfo)
+    {
+        <spam>The email of @CurrentContact.FirstName is @CurrentContact.Email</spam>
+    }
+    <br />
+    <button @onclick="@(()=>displayInfo=!displayInfo)">@(displayInfo ? "Hide" : "Show")</button>
+    <button @onclick="@(()=>DeleteCurrentContact.InvokeAsync(CurrentContact))">Delete</button>
+</p>
+
+@code {
+    [Parameter]
+    public Contact CurrentContact { get; set; }
+    [Parameter]
+    public bool DisplayEmail { get; set; }
+    [Parameter]
+    public EventCallback<Contact> DeleteCurrentContact { get; set; }
+    private bool displayInfo = false;
+}

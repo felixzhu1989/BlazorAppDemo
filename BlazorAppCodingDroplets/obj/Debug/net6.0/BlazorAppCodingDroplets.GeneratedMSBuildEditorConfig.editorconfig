@@ -1,0 +1,84 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BlazorAppCodingDroplets
+build_property.RootNamespace = BlazorAppCodingDroplets
+build_property.ProjectDir = C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorAppCodingDroplets\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorAppCodingDroplets
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Pages/BasicSyntax.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmFzaWNTeW50YXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Pages/ContactComponents/ContactList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdENvbXBvbmVudHNcQ29udGFjdExpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Pages/ContactComponents/DisplayContact.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdENvbXBvbmVudHNcRGlzcGxheUNvbnRhY3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Pages/ContactComponents/MyTextBox.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdENvbXBvbmVudHNcTXlUZXh0Qm94LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Pages/Demo01.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVtbzAxLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Pages/Test.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ocguhd80gc
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-rfi4natdu7
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

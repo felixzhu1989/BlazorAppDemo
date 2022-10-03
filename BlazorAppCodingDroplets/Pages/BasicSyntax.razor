@@ -1,0 +1,47 @@
+﻿@page "/basicsyntax"
+<PageTitle>BasicSyntax</PageTitle>
+<h3>Hello, @GetUserName()</h3>
+<p>Sum:1+1=@(1 + 1)</p>
+<button @onclick="ChangeName">Change Name</button>
+<button @onclick="@(() => { userName = "Jack";} )">Change Name</button>
+@if (testNum == 1)
+{
+    <p>Number is 1</p>
+}
+else
+{
+    <p>Number is not 1</p>
+}
+@for (int i = 0; i < 5; i++)
+{
+    <p>value of i is @i</p>
+}
+@foreach (var name in names)
+{
+    <p>@((MarkupString)name)</p>
+}
+@code {
+    private string userName = "John";
+    private int testNum = 1;
+    private List<string> names;
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        names = new List<string>()
+        {
+            "<b>Name1</b>",
+            "Name2",
+            "Name3"
+        };
+    }
+
+    private string GetUserName()
+    {
+        return $"{userName} Thomas";
+    }
+    private void ChangeName()
+    {
+        userName = "Peter";
+    }
+}
+

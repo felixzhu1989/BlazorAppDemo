@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Hongfeng.Learn.MyFirstLibrary.props" />
+</Project>

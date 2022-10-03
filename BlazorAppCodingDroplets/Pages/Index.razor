@@ -1,0 +1,21 @@
+﻿@page "/"
+@using BlazorAppCodingDroplets.Pages.ContactComponents
+<PageTitle >Index</PageTitle>
+
+<ContactList Contacts="contacts">
+    <NullContact>
+        <p class="text-info">Contacts are loading...</p>
+    </NullContact>
+    <EmptyContact>
+        <p class="text-warning">No contacts to display.</p>
+    </EmptyContact>
+</ContactList>
+
+<MyTextBox placeholder="FirstName" />
+<MyTextBox @attributes=@(new Dictionary<string,object>{
+           {"placeholder","LastName"},
+                           {"type","text"},
+                           {"disabled","disabled"}
+                       })/>
+<MyTextBox @attributes=@MyTextBoxAttributes />
+

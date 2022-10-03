@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Hongfeng.Learn.MyFirstLibrary" Version="0.1.0" />
+  </ItemGroup>
+
 </Project>

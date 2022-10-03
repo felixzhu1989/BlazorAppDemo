@@ -31,14 +31,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppDemo/Pages/ObjectDataList.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT2JqZWN0RGF0YUxpc3QucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppDemo/Pages/TabPage.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiUGFnZS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppDemo/Pages/TestPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdFBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -51,12 +43,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVG9kby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppDemo/Pages/VerticalTab.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVydGljYWxUYWIucmF6b3I=
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppDemo/Shared/ObjectDataList.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE9iamVjdERhdGFMaXN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppDemo/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppDemo/Shared/TabPage.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFRhYlBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppDemo/Shared/VerticalTab.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFZlcnRpY2FsVGFiLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppDemo/_Imports.razor]

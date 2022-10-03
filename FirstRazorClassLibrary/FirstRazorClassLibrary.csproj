@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageId>Hongfeng.Learn.MyFirstLibrary</PackageId>
+		<Version>0.1.0</Version>
+		<Authors>Hongfeng</Authors>
+		<Company>Halton</Company>
+
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<SupportedPlatform Include="browser" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.8" />
+	</ItemGroup>
+
+</Project>

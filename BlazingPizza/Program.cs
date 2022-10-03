@@ -8,6 +8,7 @@ builder.Services.AddServerSideBlazor();
 
 //AddHttpClient 语句允许应用访问 HTTP 命令。 应用使用 HttpClient 获取披萨特价商品的 JSON。
 builder.Services.AddHttpClient();
+
 //注册新的 PizzaStoreContext，并提供 SQLite 数据库的文件名。
 builder.Services.AddSqlite<PizzaStoreContext>("Data Source=pizza.db");
 //添加新的 OrderState 服务

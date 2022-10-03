@@ -1,0 +1,35 @@
+﻿@page "/demo01"
+@using BlazorAppCodingDroplets.Models
+@inject IContactService ContactService
+<h3>Demo01</h3>
+<input placeholder="First Name" @bind="firstName"/>
+<input placeholder="Last Name" @bind="lastName"/>
+<input placeholder="Email" @bind="email" /><br /><br />
+<button @onclick="AddContact">Add Contact</button><br /><br />
+@if (ContactService.GetContacts().Count == 0)
+{
+    <p class="text-warning">No contacts to display.</p>
+}
+else
+{
+    @foreach (var contact in ContactService.GetContacts())
+    {
+        <b>@contact.FirstName @contact.LastName</b><br />
+        <i>@contact.Email</i><br /><br />
+    }
+}
+@code {
+    private string firstName;
+    private string lastName;
+    private string email;
+    private void AddContact()
+    {
+        var contact = new Contact()
+        {
+            FirstName = firstName,
+            LastName = lastName,
+            Email = email
+        };
+        ContactService.AddContact(contact);
+    }
+}
