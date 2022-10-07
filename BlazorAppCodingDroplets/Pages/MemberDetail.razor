@@ -1,0 +1,27 @@
+﻿@using BlazorAppCodingDroplets.Data
+@inject NavigationManager NavigationManager
+<tr>
+    <td>@Member.Name</td>
+    <td>@Member.Email</td>
+    <td>@Member.Age</td>
+    <td>@Member.JoiningDate.ToString("yyyy/MM/dd")</td>
+    <td><button @onclick="Delete">Delete</button></td>
+    <td><button @onclick="Update">Update</button></td>
+</tr>
+
+@code {
+    [Parameter]
+    public Member? Member { get; set; }
+    [Parameter]
+    public EventCallback<int> DeleteCallBack { get; set; }
+
+    private Task Delete()
+    {
+       return DeleteCallBack.InvokeAsync(Member.Id);
+    }
+
+    private void Update()
+    {
+        NavigationManager.NavigateTo($"./updatemember/{Member.Id}");
+    }
+}

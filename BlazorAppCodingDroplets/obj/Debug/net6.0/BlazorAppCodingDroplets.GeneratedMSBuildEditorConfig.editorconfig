@@ -19,6 +19,14 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Pages/AddMember.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkTWVtYmVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Pages/AddUpdateMember.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkVXBkYXRlTWVtYmVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Pages/BasicSyntax.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmFzaWNTeW50YXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -51,8 +59,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Pages/MemberDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyRGV0YWlsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Pages/MemberList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Pages/SampleJavaScript.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FtcGxlSmF2YVNjcmlwdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Pages/Test.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Pages/UpdateMember.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXBkYXRlTWVtYmVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Shared/DeleteConfirmation.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERlbGV0ZUNvbmZpcm1hdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Shared/NotFoundPage.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5vdEZvdW5kUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorAppCodingDroplets/Shared/SurveyPrompt.razor]

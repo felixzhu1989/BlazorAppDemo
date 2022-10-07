@@ -1,0 +1,24 @@
+﻿@using BlazorAppCodingDroplets.Models
+@using BlazorAppCodingDroplets.Data
+<EditForm Model="Member" OnSubmit="Save">
+    <DataAnnotationsValidator />
+    <InputText class="form-control mb-1" placeholder="Name" @bind-Value="@Member.Name" />
+    <ValidationMessage For="() => Member.Name" />
+    <InputText class="form-control mb-1" placeholder="Email" @bind-Value="@Member.Email" />
+    <ValidationMessage For="() => Member.Email" />
+    <InputNumber class="form-control mb-1" placeholder="Age" @bind-Value="@Member.Age" />
+    <InputDate class="form-control mb-1" placeholder="Joining Date" @bind-Value="@Member.JoiningDate" />
+    <button class="btn btn-primary" type="submit">Save</button>
+</EditForm>
+
+@code {
+    [Parameter]
+    public MemberViewModel Member { get; set; }
+    [Parameter]
+    public EventCallback<MemberViewModel> SaveMember { get; set; }
+
+    public Task Save()
+    {
+        return SaveMember.InvokeAsync(Member);
+    }
+}

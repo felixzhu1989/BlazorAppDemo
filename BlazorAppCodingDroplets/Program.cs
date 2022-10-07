@@ -2,6 +2,7 @@ using BlazorAppCodingDroplets;
 using BlazorAppCodingDroplets.Data;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -37,4 +38,9 @@ static void ConfigureServiceCollection(IServiceCollection services)
     //services.AddTransient<ContactService>();
     //services.AddSingleton<IContactService, ContactService>();
     services.AddSingleton<IContactService, ContactServiceNew>();
+    services.AddDbContext<TestDbContext>(options =>
+    {
+        options.UseSqlite("Data Source=test.db");
+    });
+    services.AddScoped<MemberServices>();
 }

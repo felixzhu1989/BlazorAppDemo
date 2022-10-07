@@ -1,0 +1,58 @@
+﻿@page "/samplejavascript"
+@inject IJSRuntime JsRuntime
+
+<h3>SampleJavaScript</h3>
+
+@if(!string.IsNullOrEmpty(confirmResult))
+{
+    <p>Confirm Result:@confirmResult</p>
+}
+
+<button @onclick="ShowAlert">Show Alert</button>
+<button @onclick="ShowConfirm">Show Confirm</button>
+<button onclick="callMethod">Call Method</button>
+<button @onclick="CallInvokeMethodJavaScript">Call Instance Method</button>
+<button @onclick="CallIsolationMethod">Call Isolation Method</button>
+@code {
+    private string confirmResult;
+    private async Task ShowAlert()
+    {
+       await JsRuntime.InvokeVoidAsync("alert", "Hello world.");
+    }
+
+    private async Task ShowConfirm()
+    {
+       var result=await JsRuntime.InvokeAsync<bool>("confirm", "Do you need to proceed?");
+        confirmResult = result.ToString();
+    }
+
+    [JSInvokable]
+    public static Task<string> GetValueFromMethod()
+    {
+        return Task.FromResult<string>("Hello World");
+        
+    }
+
+    [JSInvokable]
+    public Task<string> GetValueFromInstance()
+    {
+        return Task.FromResult("Hello World from Instance");
+    }
+
+    private async Task CallInvokeMethodJavaScript()
+    {
+       await JsRuntime.InvokeVoidAsync("callInstanceMethod", DotNetObjectReference.Create(this));
+    }
+
+    [JSInvokable]
+    public Task<string> GetValueFromIsolation()
+    {
+        return Task.FromResult("Hello World from Isolation");
+    }
+    private async Task CallIsolationMethod()
+    {
+        var sample2JsReference = await JsRuntime.InvokeAsync<IJSObjectReference>("import", "./js/sample2.js");
+        await sample2JsReference.InvokeVoidAsync("callIsolationMethod", DotNetObjectReference.Create(this));
+    }
+
+}

@@ -1,0 +1,51 @@
+﻿@page "/memberlist"
+@using BlazorAppCodingDroplets.Data
+@inject MemberServices MemberServices
+@inject IJSRuntime JsRuntime
+
+<h3>Member List</h3>
+<a href="./addmember">Add Member</a>
+@if (members == null)
+{
+    <p>Members are loading...</p>
+}
+else if (members.Count == 0)
+{
+    <p>No members to display</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Joining Date</th>
+                <th>Delete</th>
+                <th>Update</th>
+            </tr>
+        </thead>
+        @foreach (var member in members)
+        {
+            <MemberDetail Member="member" DeleteCallBack="DeleteMember" />
+        }
+    </table>
+}
+@code {
+    private List<Member>? members;
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        members =await MemberServices.GetMembersAsync();
+    }
+
+    private async Task DeleteMember(int id)
+    {
+        var member = await MemberServices.GetMemberByIdAsync(id);
+        var result = await JsRuntime.InvokeAsync<bool>("confirm", $"Do you need to delete {member.Name}?");
+        if(!result)return;
+        members.RemoveAll(x => x.Id == id);
+        await MemberServices.DeleteMemberAsync(id);
+    }
+}

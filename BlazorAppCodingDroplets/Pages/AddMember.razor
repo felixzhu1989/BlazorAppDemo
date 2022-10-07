@@ -1,0 +1,33 @@
+﻿@page "/addmember"
+@using BlazorAppCodingDroplets.Models
+@using BlazorAppCodingDroplets.Data
+@inject MemberServices MemberServices
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JsRuntime
+<h3>Add Member</h3>
+
+<AddUpdateMember Member="member" SaveMember="SaveMember"/>
+@code {
+    private MemberViewModel member;
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        member = new MemberViewModel();
+    }
+    private async Task SaveMember(MemberViewModel model)
+    {
+        if (string.IsNullOrWhiteSpace(model.Name)|| string.IsNullOrWhiteSpace(model.Email))
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Please fill Name or Email");
+            return;
+        };
+        await MemberServices.AddMemberAsync(new Member()
+        {
+                Name = model.Name,
+                Email = model.Email,
+                Age = model.Age,
+                JoiningDate =DateTime.SpecifyKind(model.JoiningDate, DateTimeKind.Utc)
+        });
+        NavigationManager.NavigateTo("./memberlist");
+    }
+}

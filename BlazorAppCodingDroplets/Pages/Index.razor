@@ -1,8 +1,12 @@
 ﻿@page "/"
 @using BlazorAppCodingDroplets.Pages.ContactComponents
 <PageTitle >Index</PageTitle>
-
-<ContactList Contacts="contacts">
+<a href="./test">Test Page</a>
+<br/>
+<button @onclick="NavigateToTest">Navigate to Test</button>
+<br/>
+<button @onclick="ShowOrHideContacts">@(isContactsDisplay ? "Hide Contacts" : "Show Contacts") </button><br/>
+<ContactList @ref="contactList" Contacts="contacts">
     <NullContact>
         <p class="text-info">Contacts are loading...</p>
     </NullContact>
@@ -11,6 +15,7 @@
     </EmptyContact>
 </ContactList>
 
+<br/>
 <MyTextBox placeholder="FirstName" />
 <MyTextBox @attributes=@(new Dictionary<string,object>{
            {"placeholder","LastName"},
@@ -18,4 +23,6 @@
                            {"disabled","disabled"}
                        })/>
 <MyTextBox @attributes=@MyTextBoxAttributes />
+
+
 

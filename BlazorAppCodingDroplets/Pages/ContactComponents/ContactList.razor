@@ -1,34 +1,56 @@
 ﻿@using BlazorAppCodingDroplets.Models
-
-<input type="checkbox" @bind="DisplayEmail" /><label>Display Email</label>
-@if (Contacts == null)
+@inject IJSRuntime JsRuntime
+<input type="checkbox" @bind="displayEmail" /><label>Display Email</label>
+@if (displayContacts)
 {
-    @NullContact
-}
-else if (Contacts.Count == 0)
-{
-    @EmptyContact
-}
-else
-{
-    @foreach (var contact in Contacts)
+    @if (Contacts == null)
     {
-        <DisplayContact CurrentContact="contact"
-                        DisplayEmail="DisplayEmail"
-                        DeleteCurrentContact="DeleteContact" />
+        @NullContact
+    }
+    else if (Contacts.Count == 0)
+    {
+        @EmptyContact
+    }
+    else
+    {
+        @foreach (var contact in Contacts)
+        {
+            <DisplayContact CurrentContact="contact"
+                DisplayEmail="displayEmail"
+                DeleteCurrentContact="RequestPermission" />
+        }
     }
 }
-
-@code{
+<DeleteConfirmation @ref="deleteConfirmation" OnConfirmed="OnDeleteConfirmed"></DeleteConfirmation>
+@code {
+    private DeleteConfirmation deleteConfirmation;
     [Parameter]
     public RenderFragment NullContact { get; set; }
     [Parameter]
     public RenderFragment EmptyContact { get; set; }
     [Parameter]
     public List<Contact> Contacts { get; set; }
-    public bool DisplayEmail { get; set; }
-    private void DeleteContact(Contact contact)
+    private bool displayEmail = false;
+    private bool displayContacts = true;
+    private async Task DeleteContact(Contact contact)
+    {
+        var confirmResult = await JsRuntime.InvokeAsync<bool>("confirm", $"Do you need to delete {contact.FirstName} {contact.LastName} from contacts list?");
+        if (confirmResult) Contacts.Remove(contact);
+    }
+
+    public void ShowContacts() => displayContacts = true;
+    public void HideContacts() => displayContacts = false;
+
+    private async Task RequestPermission(Contact contact)
+    {
+        deleteConfirmation.BodyContent = $"Do you need to delete {contact.FirstName} {contact.LastName} from contacts list?";
+        deleteConfirmation.ContactToDelete = contact;
+        deleteConfirmation.Show();
+    }
+
+    private void OnDeleteConfirmed(Contact contact)
     {
         Contacts.Remove(contact);
+        deleteConfirmation.Hide();
     }
 }

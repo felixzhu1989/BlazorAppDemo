@@ -1,0 +1,38 @@
+﻿@page "/updatemember/{Id:int}"
+@using BlazorAppCodingDroplets.Models
+@using BlazorAppCodingDroplets.Data
+@inject MemberServices MemberServices
+@inject NavigationManager NavigationManager
+<h3>Update Member</h3>
+<AddUpdateMember Member="member" SaveMember="SaveMember" />
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+    private MemberViewModel member;
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        var dbMember = await MemberServices.GetMemberByIdAsync(Id);
+        member = new MemberViewModel()
+            {
+                Id=dbMember.Id,
+                Name = dbMember.Name,
+                Email = dbMember.Email,
+                Age = dbMember.Age,
+                JoiningDate = dbMember.JoiningDate
+            };
+    }
+    private async Task SaveMember(MemberViewModel model)
+    {
+        await MemberServices.UpdateMemberAsync(new Member()
+            {
+                Id = model.Id,
+                Name = model.Name,
+                Email = model.Email,
+                Age = model.Age,
+                JoiningDate =DateTime.SpecifyKind(model.JoiningDate, DateTimeKind.Utc)
+            });
+        NavigationManager.NavigateTo("./memberlist");
+    }
+}
