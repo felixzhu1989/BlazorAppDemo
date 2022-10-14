@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\FirstRazorClassLibrary.csproj": {}
+    "E:\\CSharp\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\FirstRazorClassLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\FirstRazorClassLibrary.csproj": {
+    "E:\\CSharp\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\FirstRazorClassLibrary.csproj": {
       "version": "0.1.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\FirstRazorClassLibrary.csproj",
+        "projectUniqueName": "E:\\CSharp\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\FirstRazorClassLibrary.csproj",
         "projectName": "Hongfeng.Learn.MyFirstLibrary",
-        "projectPath": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\FirstRazorClassLibrary.csproj",
+        "projectPath": "E:\\CSharp\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\FirstRazorClassLibrary.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\obj\\",
+        "outputPath": "E:\\CSharp\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,7 +21,6 @@
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

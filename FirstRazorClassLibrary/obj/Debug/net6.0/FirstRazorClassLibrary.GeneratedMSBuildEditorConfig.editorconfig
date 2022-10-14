@@ -8,17 +8,17 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows,browser
 build_property.RootNamespace = FirstRazorClassLibrary
 build_property.RootNamespace = FirstRazorClassLibrary
-build_property.ProjectDir = C:\Users\Administrator\source\repos\BlazorAppDemo\FirstRazorClassLibrary\
+build_property.ProjectDir = E:\CSharp\repos\BlazorAppDemo\FirstRazorClassLibrary\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Administrator\source\repos\BlazorAppDemo\FirstRazorClassLibrary
+build_property.MSBuildProjectDirectory = E:\CSharp\repos\BlazorAppDemo\FirstRazorClassLibrary
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Administrator/source/repos/BlazorAppDemo/FirstRazorClassLibrary/_Imports.razor]
+[E:/CSharp/repos/BlazorAppDemo/FirstRazorClassLibrary/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/source/repos/BlazorAppDemo/FirstRazorClassLibrary/Modal.razor]
+[E:/CSharp/repos/BlazorAppDemo/FirstRazorClassLibrary/Modal.razor]
 build_metadata.AdditionalFiles.TargetPath = TW9kYWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-c923x9pfu4

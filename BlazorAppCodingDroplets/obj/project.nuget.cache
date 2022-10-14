@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UNcRc8QKGdcTML5ytBt0dGXA2L+TUzlaHJU+AcwsnbZ+FfD+qDPoxCNXfAVCXfVi/gdwtI421bcR8UFIdLLEZg==",
+  "dgSpecHash": "dXLUxYlfLYAXw3tHWhY2smyX3tYz1cqVMsAm0ioCh3luzYb048SL/WjqPyN15e+RbjoGc8a1kX7pOQGqGYr/OQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorAppCodingDroplets\\BlazorAppCodingDroplets.csproj",
+  "projectFilePath": "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorAppCodingDroplets\\BlazorAppCodingDroplets.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.9\\microsoft.data.sqlite.core.6.0.9.nupkg.sha512",

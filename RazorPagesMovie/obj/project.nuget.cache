@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IJIobXE4RdO5w7Ur1l85PZxO5M3oH66umSKbpVHYo5hBLzWfdH1H3diQovntY/PNpD14hcYxX1TwHymiUGOEBQ==",
+  "dgSpecHash": "0v2QncinkkaNnnDPCNRQpL681lErermFzwRzaRs4JkO3qX1PhxiK4TIEhhwTxNxV9R47184GUObLrL0xKyvTqQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\RazorPagesMovie\\RazorPagesMovie.csproj",
+  "projectFilePath": "E:\\CSharp\\repos\\BlazorAppDemo\\RazorPagesMovie\\RazorPagesMovie.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

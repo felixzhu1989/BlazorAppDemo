@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZwSa4ys91SeVStyZ+jhZ4wdPQfwLQMWASzTp/kJksbRToO5N0mgwvmCv9nW/fdaNzOuXve8+Ln8h+Apd47mvhg==",
+  "dgSpecHash": "9ki6KkFnMX+Xn88F8yOxgxCoKBB9Wp8mv8aSNJktHfGfqKxrFYSvpjhHubrV49e4GjsuE2KWCelIvrkWSK+Tug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorAppDemo\\BlazorAppDemo.csproj",
+  "projectFilePath": "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorAppDemo\\BlazorAppDemo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\hongfeng.learn.myfirstlibrary\\0.1.0\\hongfeng.learn.myfirstlibrary.0.1.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.8\\microsoft.aspnetcore.authorization.6.0.8.nupkg.sha512",

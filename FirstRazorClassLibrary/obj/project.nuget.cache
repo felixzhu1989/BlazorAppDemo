@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Lmxk2yLY0ztJmTp2t23dQelbrMz/HyxMokxbZ8RfxVBF3dWf0PBFawJEIlLHGpTvjjIujw69hdWzsaoaXYfhLg==",
+  "dgSpecHash": "P0Ur6BeTphfrYd4LaUTFFuTjc8JhFcndMXaeACNwumO9boFVO1CdsSCRt+LmP+u5+F9TLb5/t2IDB9mbvC38Fg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\FirstRazorClassLibrary.csproj",
+  "projectFilePath": "E:\\CSharp\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\FirstRazorClassLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.8\\microsoft.aspnetcore.authorization.6.0.8.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.8\\microsoft.aspnetcore.components.6.0.8.nupkg.sha512",
