@@ -1,11 +1,34 @@
 ﻿@page "/"
 @using BlazorAppCodingDroplets.Pages.ContactComponents
-<PageTitle >Index</PageTitle>
+@inject IJSRuntime JsRuntime
+<PageTitle>Index</PageTitle>
+
+<AuthorizeView>
+    <Authorized>
+        <h1>Hello, @context.User.Identity.Name!</h1>
+    </Authorized>
+    <NotAuthorized>
+        <h1>Hello, Guest!</h1>
+    </NotAuthorized>
+</AuthorizeView>
+<AuthorizeView>
+    <Authorized>
+        <br />
+        <button class="btn btn-outline-primary" @onclick="DisplayGreetingAlert">Display Greeting Alert</button>
+    </Authorized>
+</AuthorizeView>
+
+
+
+
+
+
 <a href="./test">Test Page</a>
-<br/>
+<br />
 <button @onclick="NavigateToTest">Navigate to Test</button>
-<br/>
-<button @onclick="ShowOrHideContacts">@(isContactsDisplay ? "Hide Contacts" : "Show Contacts") </button><br/>
+<br />
+<button @onclick="ShowOrHideContacts">@(isContactsDisplay ? "Hide Contacts" : "Show Contacts") </button>
+<br />
 <ContactList @ref="contactList" Contacts="contacts">
     <NullContact>
         <p class="text-info">Contacts are loading...</p>
@@ -15,14 +38,25 @@
     </EmptyContact>
 </ContactList>
 
-<br/>
+<br />
 <MyTextBox placeholder="FirstName" />
 <MyTextBox @attributes=@(new Dictionary<string,object>{
            {"placeholder","LastName"},
-                           {"type","text"},
-                           {"disabled","disabled"}
-                       })/>
+           {"type","text"},
+           {"disabled","disabled"}
+           }) />
 <MyTextBox @attributes=@MyTextBoxAttributes />
 
 
+@code
+{
+    [CascadingParameter]
+    private Task<AuthenticationState> AuthState { get; set; }
 
+    private async Task DisplayGreetingAlert()
+    {
+        var authState = await AuthState;
+        var message = $"Hello {authState.User.Identity.Name}";
+        await JsRuntime.InvokeVoidAsync("alert", message);
+    }
+}

@@ -1,0 +1,98 @@
+﻿@page "/productlist"
+@using BlazorWasmCodingDroplets.Shared
+@using System.Net
+@inject HttpClient HttpClient
+<PageTitle>Product List</PageTitle>
+<h3>Product List</h3>
+<input @bind="_product.Code" placeholder="Code"/>
+<input @bind="_product.Name" placeholder="Name" />
+<input @bind="_product.Price" placeholder="Price" />
+<button @onclick="AddProduct">Add</button>
+<hr/>
+
+@if (_isUpdateShow)
+{
+    <input @bind="_update.Code" style="color: gray" readonly/>
+    <input @bind="_update.Name" placeholder="Name" />
+    <input @bind="_update.Price" placeholder="Price" />
+    <button @onclick="UpdateProduct">Save</button>
+    <hr/>
+}
+
+@if (_products != null && _products.Count != 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Operate</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in _products)
+            {
+                <tr>
+                    <td>@product.Code</td>
+                    <td>@product.Name</td>
+                    <td>@product.Price</td>
+                    <td>
+                        <button @onclick="async () => { await DeleteProduct(product.Code); }">Delete</button>
+                        <button @onclick="async () => { await ShowUpdate(product.Code); }">Update</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+}
+else
+{
+    <p class="text-warning">No products to display.</p>
+}
+
+@code {
+    private List<Product>? _products;
+    private Product _product = new Product();
+    private Product? _update = new Product();
+    private bool _isUpdateShow;
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        await RefreshData();
+    }
+
+    private async Task RefreshData()
+    {
+        //调用api获取product数据
+        _products =await HttpClient.GetFromJsonAsync<List<Product>>("api/Product/All");
+    }
+    private async Task AddProduct()
+    {
+        await HttpClient.PostAsJsonAsync<Product>("api/Product", _product);
+        _product.Code = "";
+        _product.Name = "";
+        _product.Price = 0;
+        await RefreshData();
+    }
+
+    private async Task DeleteProduct(string productCode)
+    {
+        await HttpClient.DeleteAsync($"api/Product?productCode={productCode}");
+        await RefreshData();
+    }
+
+    private async Task ShowUpdate(string productCode)
+    {
+        _update =await HttpClient.GetFromJsonAsync<Product>($"api/Product?productCode={productCode}");
+        _isUpdateShow = true;
+    }
+
+    private async Task UpdateProduct()
+    {
+        _isUpdateShow = false;
+        await HttpClient.PutAsJsonAsync("api/Product", _update);
+        await RefreshData();
+    }
+}

@@ -1,0 +1,12 @@
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\bin\Debug\net6.0\BlazorWasmCodingDroplets.Shared.deps.json
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\bin\Debug\net6.0\BlazorWasmCodingDroplets.Shared.dll
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\bin\Debug\net6.0\BlazorWasmCodingDroplets.Shared.pdb
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\obj\Debug\net6.0\BlazorWasmCodingDroplets.Shared.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\obj\Debug\net6.0\BlazorWasmCodingDroplets.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\obj\Debug\net6.0\BlazorWasmCodingDroplets.Shared.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\obj\Debug\net6.0\BlazorWasmCodingDroplets.Shared.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\obj\Debug\net6.0\BlazorWasmCodingDroplets.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\obj\Debug\net6.0\BlazorWasmCodingDroplets.Shared.dll
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\obj\Debug\net6.0\refint\BlazorWasmCodingDroplets.Shared.dll
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\obj\Debug\net6.0\BlazorWasmCodingDroplets.Shared.pdb
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\obj\Debug\net6.0\ref\BlazorWasmCodingDroplets.Shared.dll

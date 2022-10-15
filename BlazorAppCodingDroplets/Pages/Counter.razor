@@ -1,15 +1,54 @@
 ﻿@page "/counter"
+@attribute [Authorize(Roles = "admin,user")]
+
+@using BlazorAppCodingDroplets.Models
+@using System.Timers
+
+@implements IDisposable
 
 <PageTitle>Counter</PageTitle>
 
-<h1>Counter</h1>
+<h1 style="color: @AppTheme.PrimaryColor">Counter</h1>
 
-<p role="status">Current count: @currentCount</p>
+<p role="status" style="color: @AppTheme.SecondaryColor">Current count: @currentCount</p>
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<br/>
+<span>Choose Primary Color:</span>
+<select @bind="AppTheme.PrimaryColor">
+    <option value="red">Red</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+</select>
 
+<p>@dateTimeValue</p>
 @code {
+    [CascadingParameter]
+    public Theme AppTheme { get; set; }
+
     private int currentCount = 0;
+
+    private Timer timer;
+    private string dateTimeValue;
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        timer = new Timer();
+        timer.Interval = 1000;
+        timer.Elapsed += OnTimeElapsed;//每隔1s钟就会执行一次这个方法
+        timer.Enabled = true;
+    }
+    private void OnTimeElapsed(object? sender, ElapsedEventArgs e)
+    {
+        dateTimeValue = DateTime.Now.ToString();
+        Console.WriteLine(dateTimeValue);
+        InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        timer.Dispose();
+    }
 
     private void IncrementCount()
     {

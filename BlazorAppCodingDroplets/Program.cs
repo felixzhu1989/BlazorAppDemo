@@ -1,6 +1,9 @@
 using BlazorAppCodingDroplets;
+using BlazorAppCodingDroplets.Authentication;
 using BlazorAppCodingDroplets.Data;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Authorization;
+using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,6 +13,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
+//身份验证用的SessionStorage
+builder.Services.AddAuthenticationCore();
+builder.Services.AddScoped<ProtectedSessionStorage>();
+builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthenticationSateProvider>();
+builder.Services.AddSingleton<UserAccountServer>();
 
 ConfigureServiceCollection(builder.Services);
 

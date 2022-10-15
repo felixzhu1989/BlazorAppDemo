@@ -1,20 +1,39 @@
 ﻿@using BlazorAppCodingDroplets.Models
 <p>
-    <b>Name:</b><span>@CurrentContact.FirstName @CurrentContact.LastName</span><br />
+    <b>Name:</b>
+    @*<span style="color: @ContactColor">@CurrentContact.FirstName @CurrentContact.LastName</span>*@
+    <span style="color: @AppTheme.PrimaryColor">@CurrentContact.FirstName @CurrentContact.LastName</span>
+    <br />
     @if (DisplayEmail)
     {
-        <b>Email:</b><span>@CurrentContact.Email</span><br />
+        <b>Email:</b>
+        <span style="color: @AppTheme.SecondaryColor">@CurrentContact.Email</span>
+        <br />
     }
     @if (displayInfo)
     {
         <spam>The email of @CurrentContact.FirstName is @CurrentContact.Email</spam>
     }
+    @*<br />
+    Cascading int value:@TestCascadingIntValue
     <br />
+    Cascading same type value:@TestCascadingStingValue
+    <br />*@
     <button @onclick="@(()=>displayInfo=!displayInfo)">@(displayInfo ? "Hide" : "Show")</button>
     <button @onclick="@(()=>DeleteCurrentContact.InvokeAsync(CurrentContact))">Delete</button>
 </p>
 
 @code {
+    //[CascadingParameter(Name = "Color")]
+    //public string ContactColor { get; set; }
+    //[CascadingParameter]
+    //public int TestCascadingIntValue { get; set; }
+    //[CascadingParameter(Name = "TestColor")]
+    //public string TestCascadingStingValue { get; set; }
+    [CascadingParameter]
+    public Theme AppTheme { get; set; }
+
+
     [Parameter]
     public Contact CurrentContact { get; set; }
     [Parameter]

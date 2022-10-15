@@ -552,11 +552,11 @@
   "project": {
     "version": "0.1.0",
     "restore": {
-      "projectUniqueName": "E:\\CSharp\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\FirstRazorClassLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\FirstRazorClassLibrary.csproj",
       "projectName": "Hongfeng.Learn.MyFirstLibrary",
-      "projectPath": "E:\\CSharp\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\FirstRazorClassLibrary.csproj",
+      "projectPath": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\FirstRazorClassLibrary.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "E:\\CSharp\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -566,6 +566,7 @@
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

@@ -1,4 +1,8 @@
-﻿@inherits LayoutComponentBase
+﻿@using BlazorAppCodingDroplets.Models
+@using BlazorAppCodingDroplets.Authentication
+@inherits LayoutComponentBase
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavigationManager
 
 <PageTitle>BlazorAppCodingDroplets</PageTitle>
 
@@ -10,10 +14,41 @@
     <main>
         <div class="top-row px-4">
             <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+            <AuthorizeView>
+                <Authorized>
+                    <a @onclick="Logout" href="javascript:void(0)">Logout</a>
+                </Authorized>
+                <NotAuthorized>
+                    <a href="./login">Login</a>
+                </NotAuthorized>
+            </AuthorizeView>
         </div>
 
+
         <article class="content px-4">
-            @Body
+            @*<CascadingValue Name="Color" Value="Color">
+            <CascadingValue Value="TestValue">
+            <CascadingValue Name="TestColor" Value="TestColor">*@
+            <CascadingValue Value="ApplicationTheme">
+                @Body
+            </CascadingValue>
+            @*</CascadingValue>
+            </CascadingValue>
+            </CascadingValue>*@
         </article>
     </main>
 </div>
+@code
+{
+    //public string Color { get; set; } = "red";
+    //public int TestValue { get; set; } = 5;
+    //public string TestColor { get; set; } = "green";
+    public Theme ApplicationTheme { get; set; } = new Theme();
+
+    private async Task Logout()
+    {
+        var customAuthStateProvider = (CustomAuthenticationSateProvider)AuthenticationStateProvider;
+        await customAuthStateProvider.UpdateAuthenticationState(null);
+        NavigationManager.NavigateTo("./", true);
+    }
+}
