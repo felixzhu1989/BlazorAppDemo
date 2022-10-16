@@ -47,7 +47,7 @@
 
     private async Task Logout()
     {
-        var customAuthStateProvider = (CustomAuthenticationSateProvider)AuthenticationStateProvider;
+        var customAuthStateProvider = (CustomAuthenticationStateProvider)AuthenticationStateProvider;
         await customAuthStateProvider.UpdateAuthenticationState(null);
         NavigationManager.NavigateTo("./", true);
     }

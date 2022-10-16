@@ -821,3 +821,11 @@ C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Clien
 C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Client\obj\Debug\net6.0\refint\BlazorWasmCodingDroplets.Client.dll
 C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Client\obj\Debug\net6.0\BlazorWasmCodingDroplets.Client.pdb
 C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Client\obj\Debug\net6.0\ref\BlazorWasmCodingDroplets.Client.dll
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Client\bin\Debug\net6.0\wwwroot\_framework\Blazored.SessionStorage.dll
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Authorization.dll.gz
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Client\bin\Debug\net6.0\wwwroot\_framework\Blazored.SessionStorage.dll.gz
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Client\bin\Debug\net6.0\Blazored.SessionStorage.dll
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Client\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Client\obj\Debug\net6.0\build-gz\PAulaYky.gz
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Client\obj\Debug\net6.0\build-gz\bYInvGoA.gz

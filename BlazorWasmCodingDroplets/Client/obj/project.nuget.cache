@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "viM05kHEQ/3CqS/Z2/DAHKoF4Uc1/ZczTOyu8jAjKEj1BykkAi0IhJe6x85BzFMzmwPfyxSiOSJDuv5NoERiqw==",
+  "dgSpecHash": "VwayknCTgN0kbVtomojmuWV7YfSvrs4UUvSpLHZNS7KPkszhTTR+mnCUYO5QY+xY/n7PQPcc0o/d8JlrsyyLsQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\BlazorWasmCodingDroplets.Client.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\blazored.sessionstorage\\2.2.0\\blazored.sessionstorage.2.2.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.10\\microsoft.aspnetcore.authorization.6.0.10.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.10\\microsoft.aspnetcore.components.6.0.10.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.10\\microsoft.aspnetcore.components.analyzers.6.0.10.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\6.0.10\\microsoft.aspnetcore.components.authorization.6.0.10.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\6.0.10\\microsoft.aspnetcore.components.forms.6.0.10.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.components.web\\6.0.10\\microsoft.aspnetcore.components.web.6.0.10.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.10\\microsoft.aspnetcore.components.webassembly.6.0.10.nupkg.sha512",

@@ -16,7 +16,7 @@ builder.Services.AddSingleton<WeatherForecastService>();
 //身份验证用的SessionStorage
 builder.Services.AddAuthenticationCore();
 builder.Services.AddScoped<ProtectedSessionStorage>();
-builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthenticationSateProvider>();
+builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
 builder.Services.AddSingleton<UserAccountServer>();
 
 ConfigureServiceCollection(builder.Services);

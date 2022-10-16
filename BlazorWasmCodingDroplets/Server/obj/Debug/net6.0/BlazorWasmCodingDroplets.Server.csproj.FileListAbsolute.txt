@@ -51,3 +51,13 @@ C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Serve
 C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Server\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Server\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Server\obj\Debug\net6.0\BlazorWasmCodingDroplets.Server.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Server\bin\Debug\net6.0\Blazored.SessionStorage.dll
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Server\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Server\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Server\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Server\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Server\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Server\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Server\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

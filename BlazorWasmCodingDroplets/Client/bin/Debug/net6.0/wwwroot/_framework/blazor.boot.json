@@ -7,8 +7,10 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "Blazored.SessionStorage.dll": "sha256-XkZNIC6OGMeHZDbBGnhfc9yXdLIvGa8LlKDd4ZPWkS8=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-gbA+AujHUUBawZgIGQVo3vLdHlkaD7QLRM0dStUecSM=",
       "Microsoft.AspNetCore.Components.dll": "sha256-+gNaJML9x0hS\/cLcBimAURDK\/S8nSWJZkTCaP5lgRys=",
+      "Microsoft.AspNetCore.Components.Authorization.dll": "sha256-9+8\/yERgTpi3ZfI6AAGlVvAMp+l67mW6GLhfzVwz7KY=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-uEDGfx46VmVIFGVu1clYPrq64JTRcayMUjUw1cr6Zck=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-w22hRC5++AfKK8AS70s3daNJlRW\/viXntxDuPRM\/+AY=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-hLMWN1JTzfCVYXQOq6G1tEFmu+D4tn+hSbJf4nG+7K4=",
@@ -196,15 +198,15 @@
       "mscorlib.dll": "sha256-SboUbkX8s5RVQGtnN5Q67MBZW0I\/P3aeEMENJq8gv8M=",
       "netstandard.dll": "sha256-lZ8L5iiSghlvyt2ie2YdBYAtJbVa4mvpvBX3W9ihjLc=",
       "System.Private.CoreLib.dll": "sha256-jECkJy2Sjpl59QEL3nO3p8nwKGXvnJpXaKQF\/+MTw04=",
-      "BlazorWasmCodingDroplets.Shared.dll": "sha256-OpylCP6CmyZbfL8Pbv2aSIDnEUIX99CFme5bVQktZV8=",
-      "BlazorWasmCodingDroplets.Client.dll": "sha256-gYLTHREDqHVW7NL6d6UaieHyZlUZGbMWRfJPNcxsz1o="
+      "BlazorWasmCodingDroplets.Shared.dll": "sha256-sZCYerQCPXUSmLZ9ZSUi+exhHntyo2Jp9pBmrcOYN+g=",
+      "BlazorWasmCodingDroplets.Client.dll": "sha256-+FDQR7NCMoxM0bmruTYNmi8tsHE7PdSgdW9eRsQjl1s="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "BlazorWasmCodingDroplets.Shared.pdb": "sha256-qCGw4U4Uf1Yg3attqC7MoDtMPzb2a7Jv1vhErVrJ9DY=",
-      "BlazorWasmCodingDroplets.Client.pdb": "sha256-lho34Q3qdNB88R1rdkY+zc6WLwRR8zRQuo6uF1TtyJ4="
+      "BlazorWasmCodingDroplets.Shared.pdb": "sha256-KJkm+VBThCLBoEkZ923LcNrpJG7IL6zSZGkQFFgIQ+g=",
+      "BlazorWasmCodingDroplets.Client.pdb": "sha256-AeqOTU5Qqcb2N4xJ+H0Zk1EygS3DGqouaTniBss\/zk0="
     },
     "runtime": {
       "dotnet.6.0.10.km7e80ppcz.js": "sha256-KtM3Wrooexmrt5NmqvZfWoDPtNIe6wZqLopR6ToqUPg=",

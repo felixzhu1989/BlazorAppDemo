@@ -4,12 +4,12 @@ using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
 
 namespace BlazorAppCodingDroplets.Authentication
 {
-    public class CustomAuthenticationSateProvider:AuthenticationStateProvider
+    public class CustomAuthenticationStateProvider:AuthenticationStateProvider
     {
         private readonly ProtectedSessionStorage _sessionStorage;
         private ClaimsPrincipal _anonymous = new ClaimsPrincipal(new ClaimsIdentity());
 
-        public CustomAuthenticationSateProvider(ProtectedSessionStorage sessionStorage)
+        public CustomAuthenticationStateProvider(ProtectedSessionStorage sessionStorage)
         {
             _sessionStorage = sessionStorage;
         }

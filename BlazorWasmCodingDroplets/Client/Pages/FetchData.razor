@@ -1,6 +1,12 @@
 ﻿@page "/fetchdata"
+@attribute [Authorize(Roles = "admin")]
+
 @using BlazorWasmCodingDroplets.Shared
+@using BlazorWasmCodingDroplets.Client.Authentication
+@using System.Net.Http.Headers
 @inject HttpClient Http
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavigationManager
 
 <PageTitle>Weather forecast</PageTitle>
 
@@ -42,6 +48,18 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("WeatherForecast");
+        var customAuthStateProvider = (CustomAuthenticationStateProvider)AuthenticationStateProvider;
+        var token = await customAuthStateProvider.GetToken();
+        if (!string.IsNullOrWhiteSpace(token))
+        {
+            //给http请求头中添加token
+            Http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", token);
+            forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("WeatherForecast");
+        }
+        else
+        {
+            NavigationManager.NavigateTo("./login");
+        }
+        
     }
 }

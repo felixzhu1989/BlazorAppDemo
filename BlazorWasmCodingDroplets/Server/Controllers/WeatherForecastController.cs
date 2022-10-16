@@ -1,4 +1,5 @@
 using BlazorWasmCodingDroplets.Shared;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlazorWasmCodingDroplets.Server.Controllers
@@ -20,6 +21,7 @@ namespace BlazorWasmCodingDroplets.Server.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "admin")]
         public IEnumerable<WeatherForecast> Get()
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast

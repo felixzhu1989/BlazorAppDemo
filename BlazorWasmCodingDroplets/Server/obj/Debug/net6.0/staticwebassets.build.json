@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3aTJtW/BE9h7DU1bYcbN0z6nGccJ7esjVQBd9KqwsW4=",
+  "Hash": "iEVKsXa0P0AgJnjaB728Lcrd341kAAGs036LL1p/m4Y=",
   "Source": "BlazorWasmCodingDroplets.Server",
   "BasePath": "_content/BlazorWasmCodingDroplets.Server",
   "Mode": "Default",
@@ -61,6 +61,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.10\\build\\net6.0\\blazor.webassembly.js"
+    },
+    {
+      "Identity": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Blazored.SessionStorage.dll",
+      "SourceId": "BlazorWasmCodingDroplets.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.SessionStorage.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Administrator\\.nuget\\packages\\blazored.sessionstorage\\2.2.0\\lib\\net5.0\\Blazored.SessionStorage.dll"
     },
     {
       "Identity": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\BlazorWasmCodingDroplets.Client.dll",
@@ -265,6 +282,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.10\\lib\\net6.0\\Microsoft.AspNetCore.Authorization.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "SourceId": "BlazorWasmCodingDroplets.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\6.0.10\\lib\\net6.0\\Microsoft.AspNetCore.Components.Authorization.dll"
     },
     {
       "Identity": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
@@ -4534,6 +4568,23 @@
       "OriginalItemSpec": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ComponentModel.Primitives.dll"
     },
     {
+      "Identity": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\obj\\Debug\\net6.0\\build-gz\\bYInvGoA.gz",
+      "SourceId": "BlazorWasmCodingDroplets.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll"
+    },
+    {
       "Identity": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\obj\\Debug\\net6.0\\build-gz\\c2TWthia.gz",
       "SourceId": "BlazorWasmCodingDroplets.Client",
       "SourceType": "Project",
@@ -5722,6 +5773,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.NetworkInformation.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\obj\\Debug\\net6.0\\build-gz\\PAulaYky.gz",
+      "SourceId": "BlazorWasmCodingDroplets.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.SessionStorage.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Blazored.SessionStorage.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Blazored.SessionStorage.dll"
     },
     {
       "Identity": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\obj\\Debug\\net6.0\\build-gz\\pdNdkEIU.gz",

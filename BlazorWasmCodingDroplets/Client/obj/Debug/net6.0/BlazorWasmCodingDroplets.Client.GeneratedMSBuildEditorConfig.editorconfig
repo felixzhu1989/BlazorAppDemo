@@ -34,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorWasmCodingDroplets/Client/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorWasmCodingDroplets/Client/Pages/ProductList.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdExpc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

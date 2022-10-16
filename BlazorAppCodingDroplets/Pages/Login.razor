@@ -41,7 +41,7 @@
             await JsRuntime.InvokeVoidAsync("alert", "Invalid User!");
             return;
         }
-        var customAuthStateProvider = (CustomAuthenticationSateProvider)AuthenticationStateProvider;
+        var customAuthStateProvider = (CustomAuthenticationStateProvider)AuthenticationStateProvider;
         //更新登录状态
         await customAuthStateProvider.UpdateAuthenticationState(new UserSession()
             {
