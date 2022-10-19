@@ -21,6 +21,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWasmCodingDroplets.Cl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWasmCodingDroplets.Shared", "BlazorWasmCodingDroplets\Shared\BlazorWasmCodingDroplets.Shared.csproj", "{F7858BE9-BD87-4DFB-99B3-BA3433D96ACD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodingDroplets", "CodingDroplets", "{9A1A1E7A-CFA5-4DF3-9F3B-0E791EA73E09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PatrickGod", "PatrickGod", "{C6339F4C-A0E9-4890-A709-05E68E7DB415}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWasmAuthPatrickGod.Server", "BlazorWasmAuthPatrickGod\Server\BlazorWasmAuthPatrickGod.Server.csproj", "{635CD291-71A1-4B3E-838A-F06160F215CA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWasmAuthPatrickGod.Client", "BlazorWasmAuthPatrickGod\Client\BlazorWasmAuthPatrickGod.Client.csproj", "{69B332C1-CA53-4C1B-91DE-DA15EF559654}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWasmAuthPatrickGod.Shared", "BlazorWasmAuthPatrickGod\Shared\BlazorWasmAuthPatrickGod.Shared.csproj", "{397EB50A-0BA9-4B95-924D-A81817501CB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,9 +73,31 @@ Global
 		{F7858BE9-BD87-4DFB-99B3-BA3433D96ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7858BE9-BD87-4DFB-99B3-BA3433D96ACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7858BE9-BD87-4DFB-99B3-BA3433D96ACD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{635CD291-71A1-4B3E-838A-F06160F215CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{635CD291-71A1-4B3E-838A-F06160F215CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{635CD291-71A1-4B3E-838A-F06160F215CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{635CD291-71A1-4B3E-838A-F06160F215CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69B332C1-CA53-4C1B-91DE-DA15EF559654}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69B332C1-CA53-4C1B-91DE-DA15EF559654}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69B332C1-CA53-4C1B-91DE-DA15EF559654}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69B332C1-CA53-4C1B-91DE-DA15EF559654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{397EB50A-0BA9-4B95-924D-A81817501CB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{397EB50A-0BA9-4B95-924D-A81817501CB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{397EB50A-0BA9-4B95-924D-A81817501CB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{397EB50A-0BA9-4B95-924D-A81817501CB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E40AF1CA-C194-4F62-9F33-688D4F2F5CA3} = {9A1A1E7A-CFA5-4DF3-9F3B-0E791EA73E09}
+		{288EEF89-A1C7-4A28-AE2B-D8A922D1F36C} = {9A1A1E7A-CFA5-4DF3-9F3B-0E791EA73E09}
+		{85A041F1-02F1-4208-A517-5BAA4DC027DB} = {9A1A1E7A-CFA5-4DF3-9F3B-0E791EA73E09}
+		{65918E54-F0AF-4A0E-85E4-499FCF3843F5} = {9A1A1E7A-CFA5-4DF3-9F3B-0E791EA73E09}
+		{F7858BE9-BD87-4DFB-99B3-BA3433D96ACD} = {9A1A1E7A-CFA5-4DF3-9F3B-0E791EA73E09}
+		{635CD291-71A1-4B3E-838A-F06160F215CA} = {C6339F4C-A0E9-4890-A709-05E68E7DB415}
+		{69B332C1-CA53-4C1B-91DE-DA15EF559654} = {C6339F4C-A0E9-4890-A709-05E68E7DB415}
+		{397EB50A-0BA9-4B95-924D-A81817501CB4} = {C6339F4C-A0E9-4890-A709-05E68E7DB415}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A238AF7D-9843-4A7C-81AA-96E6730D6D84}

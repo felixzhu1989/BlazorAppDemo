@@ -10,3 +10,15 @@ C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Share
 C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\obj\Debug\net6.0\refint\BlazorWasmCodingDroplets.Shared.dll
 C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\obj\Debug\net6.0\BlazorWasmCodingDroplets.Shared.pdb
 C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\obj\Debug\net6.0\ref\BlazorWasmCodingDroplets.Shared.dll
+E:\CSharp\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\bin\Debug\net6.0\BlazorWasmCodingDroplets.Shared.deps.json
+E:\CSharp\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\bin\Debug\net6.0\BlazorWasmCodingDroplets.Shared.dll
+E:\CSharp\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\bin\Debug\net6.0\BlazorWasmCodingDroplets.Shared.pdb
+E:\CSharp\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\obj\Debug\net6.0\BlazorWasmCodingDroplets.Shared.csproj.AssemblyReference.cache
+E:\CSharp\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\obj\Debug\net6.0\BlazorWasmCodingDroplets.Shared.GeneratedMSBuildEditorConfig.editorconfig
+E:\CSharp\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\obj\Debug\net6.0\BlazorWasmCodingDroplets.Shared.AssemblyInfoInputs.cache
+E:\CSharp\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\obj\Debug\net6.0\BlazorWasmCodingDroplets.Shared.AssemblyInfo.cs
+E:\CSharp\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\obj\Debug\net6.0\BlazorWasmCodingDroplets.Shared.csproj.CoreCompileInputs.cache
+E:\CSharp\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\obj\Debug\net6.0\BlazorWasmCodingDroplets.Shared.dll
+E:\CSharp\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\obj\Debug\net6.0\refint\BlazorWasmCodingDroplets.Shared.dll
+E:\CSharp\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\obj\Debug\net6.0\BlazorWasmCodingDroplets.Shared.pdb
+E:\CSharp\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Shared\obj\Debug\net6.0\ref\BlazorWasmCodingDroplets.Shared.dll

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JMIGX2AFmwgYaM3ROT6mpUGMclnSJDwCueJdqwcNV2OP9vMXVr8p62357dXlXOD55RFiWLdl613WmuIyyQTadA==",
+  "dgSpecHash": "JinPsobRkDiHDkrIQfJX2VRzzKAkf5kKBAqGXKTkB3mefqcaNWHtPyl2mYnGGR9XjleoogCNQXbxJVJjW+vt1A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmNotHostedCodingDroplets\\BlazorWasmNotHostedCodingDroplets.csproj",
+  "projectFilePath": "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorWasmNotHostedCodingDroplets\\BlazorWasmNotHostedCodingDroplets.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.10\\microsoft.aspnetcore.authorization.6.0.10.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.10\\microsoft.aspnetcore.components.6.0.10.nupkg.sha512",

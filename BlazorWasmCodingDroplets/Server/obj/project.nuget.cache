@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kWAKonOp61YouLFpo7S52/LdMs/kDDvWRfWNi73GcVIcsUIcZ24IECgm3SnguoarTTs5EHauHnLgGFmbrUv9DA==",
+  "dgSpecHash": "1M+341mBgdK8d+HOiQ3xIiQz0jSiXETdSwddhLx7JFGvfyWzfq8QPFlmW6RTXlMzhAgDlkaw7VqXLqxcHzcSRg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Server\\BlazorWasmCodingDroplets.Server.csproj",
+  "projectFilePath": "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Server\\BlazorWasmCodingDroplets.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\blazored.sessionstorage\\2.2.0\\blazored.sessionstorage.2.2.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.10\\microsoft.aspnetcore.authentication.jwtbearer.6.0.10.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Server\\BlazorWasmCodingDroplets.Server.csproj": {}
+    "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Server\\BlazorWasmCodingDroplets.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\BlazorWasmCodingDroplets.Client.csproj": {
+    "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\BlazorWasmCodingDroplets.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\BlazorWasmCodingDroplets.Client.csproj",
+        "projectUniqueName": "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\BlazorWasmCodingDroplets.Client.csproj",
         "projectName": "BlazorWasmCodingDroplets.Client",
-        "projectPath": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\BlazorWasmCodingDroplets.Client.csproj",
+        "projectPath": "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\BlazorWasmCodingDroplets.Client.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\obj\\",
+        "outputPath": "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,15 +21,14 @@
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Shared\\BlazorWasmCodingDroplets.Shared.csproj": {
-                "projectPath": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Shared\\BlazorWasmCodingDroplets.Shared.csproj"
+              "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Shared\\BlazorWasmCodingDroplets.Shared.csproj": {
+                "projectPath": "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Shared\\BlazorWasmCodingDroplets.Shared.csproj"
               }
             }
           }
@@ -93,14 +92,14 @@
         }
       }
     },
-    "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Server\\BlazorWasmCodingDroplets.Server.csproj": {
+    "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Server\\BlazorWasmCodingDroplets.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Server\\BlazorWasmCodingDroplets.Server.csproj",
+        "projectUniqueName": "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Server\\BlazorWasmCodingDroplets.Server.csproj",
         "projectName": "BlazorWasmCodingDroplets.Server",
-        "projectPath": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Server\\BlazorWasmCodingDroplets.Server.csproj",
+        "projectPath": "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Server\\BlazorWasmCodingDroplets.Server.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Server\\obj\\",
+        "outputPath": "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -110,18 +109,17 @@
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\BlazorWasmCodingDroplets.Client.csproj": {
-                "projectPath": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\BlazorWasmCodingDroplets.Client.csproj"
+              "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\BlazorWasmCodingDroplets.Client.csproj": {
+                "projectPath": "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\BlazorWasmCodingDroplets.Client.csproj"
               },
-              "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Shared\\BlazorWasmCodingDroplets.Shared.csproj": {
-                "projectPath": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Shared\\BlazorWasmCodingDroplets.Shared.csproj"
+              "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Shared\\BlazorWasmCodingDroplets.Shared.csproj": {
+                "projectPath": "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Shared\\BlazorWasmCodingDroplets.Shared.csproj"
               }
             }
           }
@@ -176,14 +174,14 @@
         }
       }
     },
-    "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Shared\\BlazorWasmCodingDroplets.Shared.csproj": {
+    "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Shared\\BlazorWasmCodingDroplets.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Shared\\BlazorWasmCodingDroplets.Shared.csproj",
+        "projectUniqueName": "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Shared\\BlazorWasmCodingDroplets.Shared.csproj",
         "projectName": "BlazorWasmCodingDroplets.Shared",
-        "projectPath": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Shared\\BlazorWasmCodingDroplets.Shared.csproj",
+        "projectPath": "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Shared\\BlazorWasmCodingDroplets.Shared.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Shared\\obj\\",
+        "outputPath": "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -193,7 +191,6 @@
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

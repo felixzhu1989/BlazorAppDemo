@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorAppCodingDroplets\\BlazorAppCodingDroplets.csproj": {}
+    "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorAppCodingDroplets\\BlazorAppCodingDroplets.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorAppCodingDroplets\\BlazorAppCodingDroplets.csproj": {
+    "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorAppCodingDroplets\\BlazorAppCodingDroplets.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorAppCodingDroplets\\BlazorAppCodingDroplets.csproj",
+        "projectUniqueName": "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorAppCodingDroplets\\BlazorAppCodingDroplets.csproj",
         "projectName": "BlazorAppCodingDroplets",
-        "projectPath": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorAppCodingDroplets\\BlazorAppCodingDroplets.csproj",
+        "projectPath": "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorAppCodingDroplets\\BlazorAppCodingDroplets.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorAppCodingDroplets\\obj\\",
+        "outputPath": "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorAppCodingDroplets\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,7 +21,6 @@
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

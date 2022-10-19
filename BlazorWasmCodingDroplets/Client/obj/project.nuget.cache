@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VwayknCTgN0kbVtomojmuWV7YfSvrs4UUvSpLHZNS7KPkszhTTR+mnCUYO5QY+xY/n7PQPcc0o/d8JlrsyyLsQ==",
+  "dgSpecHash": "cUdMit4gSauOuQRoBWLt+cpuT6M1kq6SfIjWuJQprL7d5d3fDtEB3BbzsASk6eGyp/xXztpgEXdpqkEZPM03Sw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\BlazorWasmCodingDroplets.Client.csproj",
+  "projectFilePath": "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Client\\BlazorWasmCodingDroplets.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\blazored.sessionstorage\\2.2.0\\blazored.sessionstorage.2.2.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.10\\microsoft.aspnetcore.authorization.6.0.10.nupkg.sha512",

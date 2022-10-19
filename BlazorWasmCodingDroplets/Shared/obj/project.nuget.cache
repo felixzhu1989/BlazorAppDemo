@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vW8odiTEvtKfcz6gTGruxMnnoK3nKQ9jFxPM5/Vgl3LVy3t9vTafkK7SKcrUTnqU+8QXaua64aUJ+HFt3Lap7w==",
+  "dgSpecHash": "65fUwvZdGcY7frevEoo6bNJ2L5qdpGi4XffLbq8rKNERdxg5TUiNDIFEsgi3PpUhquXr53JixwHoVDDjYlYv5w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Shared\\BlazorWasmCodingDroplets.Shared.csproj",
+  "projectFilePath": "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorWasmCodingDroplets\\Shared\\BlazorWasmCodingDroplets.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

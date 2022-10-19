@@ -11,49 +11,49 @@ build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = BlazorWasmCodingDroplets.Client
 build_property.RootNamespace = BlazorWasmCodingDroplets.Client
-build_property.ProjectDir = C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Client\
+build_property.ProjectDir = E:\CSharp\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Client\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Administrator\source\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Client
+build_property.MSBuildProjectDirectory = E:\CSharp\repos\BlazorAppDemo\BlazorWasmCodingDroplets\Client
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorWasmCodingDroplets/Client/App.razor]
+[E:/CSharp/repos/BlazorAppDemo/BlazorWasmCodingDroplets/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorWasmCodingDroplets/Client/Pages/Counter.razor]
+[E:/CSharp/repos/BlazorAppDemo/BlazorWasmCodingDroplets/Client/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorWasmCodingDroplets/Client/Pages/FetchData.razor]
+[E:/CSharp/repos/BlazorAppDemo/BlazorWasmCodingDroplets/Client/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorWasmCodingDroplets/Client/Pages/Index.razor]
+[E:/CSharp/repos/BlazorAppDemo/BlazorWasmCodingDroplets/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorWasmCodingDroplets/Client/Pages/Login.razor]
+[E:/CSharp/repos/BlazorAppDemo/BlazorWasmCodingDroplets/Client/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorWasmCodingDroplets/Client/Pages/ProductList.razor]
+[E:/CSharp/repos/BlazorAppDemo/BlazorWasmCodingDroplets/Client/Pages/ProductList.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdExpc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorWasmCodingDroplets/Client/Shared/SurveyPrompt.razor]
+[E:/CSharp/repos/BlazorAppDemo/BlazorWasmCodingDroplets/Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorWasmCodingDroplets/Client/_Imports.razor]
+[E:/CSharp/repos/BlazorAppDemo/BlazorWasmCodingDroplets/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorWasmCodingDroplets/Client/Shared/MainLayout.razor]
+[E:/CSharp/repos/BlazorAppDemo/BlazorWasmCodingDroplets/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-p05blashjo
 
-[C:/Users/Administrator/source/repos/BlazorAppDemo/BlazorWasmCodingDroplets/Client/Shared/NavMenu.razor]
+[E:/CSharp/repos/BlazorAppDemo/BlazorWasmCodingDroplets/Client/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-qevo9olkfo

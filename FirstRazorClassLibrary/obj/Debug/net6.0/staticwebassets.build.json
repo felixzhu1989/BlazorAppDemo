@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HVunUI3R/9yMfv1a0G6RmPVrLmzYiyqcjWr/QAXjaN8=",
+  "Hash": "bWhtOFWbBqwHAivF7zUgEQseJ/e+L3Dh1LKSUK+Uku4=",
   "Source": "Hongfeng.Learn.MyFirstLibrary",
   "BasePath": "_content/Hongfeng.Learn.MyFirstLibrary",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Hongfeng.Learn.MyFirstLibrary\\wwwroot",
       "Source": "Hongfeng.Learn.MyFirstLibrary",
-      "ContentRoot": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\wwwroot\\",
+      "ContentRoot": "E:\\CSharp\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\wwwroot\\",
       "BasePath": "_content/Hongfeng.Learn.MyFirstLibrary",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Hongfeng.Learn.MyFirstLibrary.styles.css",
+      "Identity": "E:\\CSharp\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Hongfeng.Learn.MyFirstLibrary.styles.css",
       "SourceId": "Hongfeng.Learn.MyFirstLibrary",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "E:\\CSharp\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Hongfeng.Learn.MyFirstLibrary",
       "RelativePath": "Hongfeng.Learn.MyFirstLibrary.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Hongfeng.Learn.MyFirstLibrary.styles.css"
+      "OriginalItemSpec": "E:\\CSharp\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Hongfeng.Learn.MyFirstLibrary.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Hongfeng.Learn.MyFirstLibrary.bundle.scp.css",
+      "Identity": "E:\\CSharp\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Hongfeng.Learn.MyFirstLibrary.bundle.scp.css",
       "SourceId": "Hongfeng.Learn.MyFirstLibrary",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "E:\\CSharp\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Hongfeng.Learn.MyFirstLibrary",
       "RelativePath": "Hongfeng.Learn.MyFirstLibrary.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Hongfeng.Learn.MyFirstLibrary.bundle.scp.css"
+      "OriginalItemSpec": "E:\\CSharp\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Hongfeng.Learn.MyFirstLibrary.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\wwwroot\\background.png",
+      "Identity": "E:\\CSharp\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\wwwroot\\background.png",
       "SourceId": "Hongfeng.Learn.MyFirstLibrary",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\wwwroot\\",
+      "ContentRoot": "E:\\CSharp\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\wwwroot\\",
       "BasePath": "_content/Hongfeng.Learn.MyFirstLibrary",
       "RelativePath": "background.png",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\background.png"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\wwwroot\\exampleJsInterop.js",
+      "Identity": "E:\\CSharp\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\wwwroot\\exampleJsInterop.js",
       "SourceId": "Hongfeng.Learn.MyFirstLibrary",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\source\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\wwwroot\\",
+      "ContentRoot": "E:\\CSharp\\repos\\BlazorAppDemo\\FirstRazorClassLibrary\\wwwroot\\",
       "BasePath": "_content/Hongfeng.Learn.MyFirstLibrary",
       "RelativePath": "exampleJsInterop.js",
       "AssetKind": "All",

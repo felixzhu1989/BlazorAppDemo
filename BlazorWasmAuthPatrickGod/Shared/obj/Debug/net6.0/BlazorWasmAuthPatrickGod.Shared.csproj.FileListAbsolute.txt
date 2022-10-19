@@ -1,0 +1,12 @@
+E:\CSharp\repos\BlazorAppDemo\BlazorWasmAuthPatrickGod\Shared\bin\Debug\net6.0\BlazorWasmAuthPatrickGod.Shared.deps.json
+E:\CSharp\repos\BlazorAppDemo\BlazorWasmAuthPatrickGod\Shared\bin\Debug\net6.0\BlazorWasmAuthPatrickGod.Shared.dll
+E:\CSharp\repos\BlazorAppDemo\BlazorWasmAuthPatrickGod\Shared\bin\Debug\net6.0\BlazorWasmAuthPatrickGod.Shared.pdb
+E:\CSharp\repos\BlazorAppDemo\BlazorWasmAuthPatrickGod\Shared\obj\Debug\net6.0\BlazorWasmAuthPatrickGod.Shared.csproj.AssemblyReference.cache
+E:\CSharp\repos\BlazorAppDemo\BlazorWasmAuthPatrickGod\Shared\obj\Debug\net6.0\BlazorWasmAuthPatrickGod.Shared.GeneratedMSBuildEditorConfig.editorconfig
+E:\CSharp\repos\BlazorAppDemo\BlazorWasmAuthPatrickGod\Shared\obj\Debug\net6.0\BlazorWasmAuthPatrickGod.Shared.AssemblyInfoInputs.cache
+E:\CSharp\repos\BlazorAppDemo\BlazorWasmAuthPatrickGod\Shared\obj\Debug\net6.0\BlazorWasmAuthPatrickGod.Shared.AssemblyInfo.cs
+E:\CSharp\repos\BlazorAppDemo\BlazorWasmAuthPatrickGod\Shared\obj\Debug\net6.0\BlazorWasmAuthPatrickGod.Shared.csproj.CoreCompileInputs.cache
+E:\CSharp\repos\BlazorAppDemo\BlazorWasmAuthPatrickGod\Shared\obj\Debug\net6.0\BlazorWasmAuthPatrickGod.Shared.dll
+E:\CSharp\repos\BlazorAppDemo\BlazorWasmAuthPatrickGod\Shared\obj\Debug\net6.0\refint\BlazorWasmAuthPatrickGod.Shared.dll
+E:\CSharp\repos\BlazorAppDemo\BlazorWasmAuthPatrickGod\Shared\obj\Debug\net6.0\BlazorWasmAuthPatrickGod.Shared.pdb
+E:\CSharp\repos\BlazorAppDemo\BlazorWasmAuthPatrickGod\Shared\obj\Debug\net6.0\ref\BlazorWasmAuthPatrickGod.Shared.dll
