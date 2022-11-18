@@ -198,15 +198,15 @@
       "mscorlib.dll": "sha256-SboUbkX8s5RVQGtnN5Q67MBZW0I\/P3aeEMENJq8gv8M=",
       "netstandard.dll": "sha256-lZ8L5iiSghlvyt2ie2YdBYAtJbVa4mvpvBX3W9ihjLc=",
       "System.Private.CoreLib.dll": "sha256-jECkJy2Sjpl59QEL3nO3p8nwKGXvnJpXaKQF\/+MTw04=",
-      "BlazorWasmAuthPatrickGod.Shared.dll": "sha256-7R37+au6+QRGtXJHGLZqzqyw8BQxqS\/DAHQdZR8ZgI0=",
-      "BlazorWasmAuthPatrickGod.Client.dll": "sha256-fNkzPjUq+9Bg9RJX+XFZgmOg1iDNs3s4GWMQnPIQG4w="
+      "BlazorWasmAuthPatrickGod.Shared.dll": "sha256-8lcUXyugRawuu7CkmxyNxnZmPhEgSYGyy4jb3YCa4ts=",
+      "BlazorWasmAuthPatrickGod.Client.dll": "sha256-mQMpsh8j8hZIGnJwXJwV80Uv\/U3QnUQ1ZwMevfpgpdQ="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "BlazorWasmAuthPatrickGod.Shared.pdb": "sha256-qG7alOdwa7iqmWxVNm0KKiXQZnmJmI8v0F\/fKGLYY1g=",
-      "BlazorWasmAuthPatrickGod.Client.pdb": "sha256-a3cl+dEG1YIyiFdUWqC2tK7Kx2ZM3hcX6a6tnfSUAaY="
+      "BlazorWasmAuthPatrickGod.Shared.pdb": "sha256-uY9mTogdY8EMl6ge+w+ItbIz1vqngMnPV\/3EuWwV0RQ=",
+      "BlazorWasmAuthPatrickGod.Client.pdb": "sha256-cVkhHDjpK1EQT+muAUckoBSkaQOe8KtCepMISjf0s20="
     },
     "runtime": {
       "dotnet.6.0.10.km7e80ppcz.js": "sha256-KtM3Wrooexmrt5NmqvZfWoDPtNIe6wZqLopR6ToqUPg=",

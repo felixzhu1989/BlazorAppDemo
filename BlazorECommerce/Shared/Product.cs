@@ -10,4 +10,8 @@ public class Product
     public string ImageUrl { get; set; } = String.Empty;
     [Column(TypeName = "decimal(18,2)")]
     public decimal Price { get; set; }
+
+    //一个Category对应多个Product
+    public Category? Category { get; set; }
+    public int CategoryId { get; set; }//显式指定外键
 }

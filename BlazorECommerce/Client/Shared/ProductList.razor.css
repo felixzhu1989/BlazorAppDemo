@@ -9,22 +9,13 @@
         transform: scale(1.1); /*悬停时放大*/
     }
 
-.media {
-    display: flex;
-    align-items: flex-start;
-}
-.media-body {
-    flex: 1;
-}
 
 .media-img-wrapper {
     width: 200px;
     text-align: center;
 }
-.price {
-    color: green;
-}
 
+/*如果media的宽度低于1023.98px，那么使用下列样式*/
 @media(max-width: 1023.98px) {
     .media {
         flex-direction: column;
