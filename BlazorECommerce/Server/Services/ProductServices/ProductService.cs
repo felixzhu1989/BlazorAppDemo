@@ -1,6 +1,4 @@
-﻿using BlazorECommerce.Shared;
-
-namespace BlazorECommerce.Server.Services.ProductServices;
+﻿namespace BlazorECommerce.Server.Services.ProductServices;
 
 public class ProductService:IProductService
 {
@@ -11,14 +9,20 @@ public class ProductService:IProductService
     }
     public async Task<ServiceResponse<List<Product>>> GetProductsAsync()
     {
-        var response = new ServiceResponse<List<Product>> { Data = await _context.Products.ToListAsync() };
+        var response = new ServiceResponse<List<Product>> { 
+            Data = await _context.Products
+            .Include(p => p.Variants)
+            .ToListAsync() };
         return response;
     }
 
     public async Task<ServiceResponse<Product>> GetProductAsync(int productId)
     {
         var response = new ServiceResponse<Product>();
-        var product = await _context.Products.FindAsync(productId);
+        var product = await _context.Products
+            .Include(p=>p.Variants)
+            .ThenInclude(v=>v.ProductType)
+            .FirstOrDefaultAsync(p=>p.Id.Equals(productId));
         if (product == null)
         {
             response.Success = false;
@@ -35,7 +39,9 @@ public class ProductService:IProductService
     {
         var response = new ServiceResponse<List<Product>>()
         {
-            Data = await _context.Products.Where(x => x.Category.Url.ToLower().Equals(categoryUrl.ToLower()))
+            Data = await _context.Products
+                .Where(x => x.Category.Url.ToLower().Equals(categoryUrl.ToLower()))
+                .Include(p => p.Variants)
                 .ToListAsync()
         };
         return response;

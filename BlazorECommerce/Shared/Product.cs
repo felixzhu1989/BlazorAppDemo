@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace BlazorECommerce.Shared;
+﻿namespace BlazorECommerce.Shared;
 
 public class Product
 {
@@ -8,10 +6,14 @@ public class Product
     public string Title { get; set; } = String.Empty;
     public string Description { get; set; } = String.Empty;
     public string ImageUrl { get; set; } = String.Empty;
-    [Column(TypeName = "decimal(18,2)")]
-    public decimal Price { get; set; }
+
+    //Price转移到了ProductVariant中
+    //[Column(TypeName = "decimal(18,2)")]
+    //public decimal Price { get; set; }
 
     //一个Category对应多个Product
     public Category? Category { get; set; }
     public int CategoryId { get; set; }//显式指定外键
+
+    public List<ProductVariant> Variants { get; set; } = new();
 }
