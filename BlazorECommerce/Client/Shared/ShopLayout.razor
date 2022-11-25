@@ -1,0 +1,19 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page">
+    <main>
+        @*px表示padding x方向*@
+        <div class="top-row px-2">
+            <HomeButton/>
+            <Search/>
+        </div>
+        @*nav-menu为我们自定义的css样式*@
+        <div class="nav-menu">
+            <ShopNavMenu />
+        </div>
+        <article class="content px-2">
+            @*RenderFragment表示UI内容的一个片段，作为一个将内容写入到Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder 的委托实现。*@
+            @Body
+        </article>
+    </main>
+</div>

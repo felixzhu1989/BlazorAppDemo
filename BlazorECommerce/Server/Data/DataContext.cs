@@ -131,6 +131,7 @@ public class DataContext : DbContext
                     CategoryId = 3
                 }
             );
+        //商品变体
         modelBuilder.Entity<ProductVariant>().HasData(
                 new ProductVariant
                 {
