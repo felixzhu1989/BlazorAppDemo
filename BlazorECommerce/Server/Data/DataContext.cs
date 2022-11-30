@@ -57,7 +57,8 @@ public class DataContext : DbContext
                     Description = "《三国演义》是元末明初小说家罗贯中根据陈寿《三国志》和裴松之注解以及民间三国故事传说经过艺术加工创作而成的长篇章回体历史演义小说。",
                     ImageUrl = "https://img.zcool.cn/community/01848c6031ccc011013ef90f6b3643.png@2o.png",
                     //Price = 9.99m,
-                    CategoryId = 1
+                    CategoryId = 1,
+                    Featured = true
                 },
                 new Product
                 {
@@ -93,7 +94,8 @@ public class DataContext : DbContext
                     Description = "《教父》The Godfather 1972年科波拉黑帮经典《教父》的首部，派拉蒙公司最成功的影片之一，坐稳IMDB头把交椅应属众望所归。",
                     ImageUrl = "https://pic4.zhimg.com/v2-9db4ffdf47e979da4dd812ea09840162_qhd.jpg",
                     //Price = 6.99m,
-                    CategoryId = 2
+                    CategoryId = 2,
+                    Featured = true
                 },
                 new Product
                 {
@@ -119,7 +121,8 @@ public class DataContext : DbContext
                     Description = "《真三国无双7》登场武将均来自古代中国大陆魏、吴、蜀三个国家。魏晋重要人物也会登场，这不禁让人感慨故事将会是多么的复杂纠结。",
                     ImageUrl = "https://img.3dmgame.com/uploads/images/news/20181127/1543287200_943463.jpg",
                     //Price = 6.99m,
-                    CategoryId = 3
+                    CategoryId = 3,
+                    Featured = true
                 },
                 new Product
                 {

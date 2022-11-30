@@ -9,10 +9,14 @@
         transform: scale(1.1); /*悬停时放大*/
     }
 
-
 .media-img-wrapper {
     width: 200px;
     text-align: center;
+}
+
+.page-selection {
+    margin-right: 15px;
+    margin-bottom: 30px;
 }
 
 /*如果media的宽度低于1023.98px，那么使用下列样式*/
