@@ -4,8 +4,9 @@ global using BlazorECommerce.Server.Data;
 global using BlazorECommerce.Server.Services.ProductServices;
 global using BlazorECommerce.Server.Services.CategoryServices;
 global using BlazorECommerce.Server.Services.CartServices;
+global using BlazorECommerce.Server.Services.AuthServices;
 
-
+//https://learn.microsoft.com/zh-cn/aspnet/core/blazor/security/?view=aspnetcore-6.0
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -24,6 +25,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ICartService, CartService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
+
+
 
 var app = builder.Build();
 app.UseSwaggerUI();
