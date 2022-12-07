@@ -11,6 +11,8 @@
         <AuthorizeView>
             <Authorized>
                 <button @onclick="Logout" class="dropdown-item">Logout</button>
+                <hr/>
+                <a href="profile" class="dropdown-item">Profile</a>
             </Authorized>
             <NotAuthorized>
                 @*记住点击跳转前的链接，通过route参数returnUrl传递*@

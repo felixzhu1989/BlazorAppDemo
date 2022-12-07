@@ -10,21 +10,21 @@
         <ValidationMessage For="() => user.Email" />
     </div>
     <div class="mb-3">
-        <label for="password">Email</label>
+        <label for="password">Password</label>
         <input id="password" type="password" @bind-value="user.Password" class="form-control" />
         <ValidationMessage For="() => user.Password" />
     </div>
     <div class="mb-3">
-        <label for="confirmPpassword">Email</label>
+        <label for="confirmPpassword">Confirm Password</label>
         <input id="confirmPpassword" type="password" @bind-value="user.ConfirmPassword" class="form-control" />
         <ValidationMessage For="() => user.ConfirmPassword" />
     </div>
     <button type="submit" class="btn btn-primary">Register</button>
-    <div class="mt-2 @messageCssClass">
-        <span>@message</span>
-    </div>
     @*<ValidationSummary/>*@
 </EditForm>
+<div class="mt-2 @messageCssClass">
+    <span>@message</span>
+</div>
 @code {
     UserRegister user = new();
     string message = string.Empty;
