@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KMsIHDeBSHb5w8L6El8oBTBkCvs5DXN00BcKGj75sjE=",
+  "Hash": "GwOQd9e1hKkXZf6wuPGK7ODyuggxG8AywpJRw1hg/o8=",
   "Source": "BlazorAppCodingDroplets",
   "BasePath": "_content/BlazorAppCodingDroplets",
   "Mode": "Default",
@@ -27249,23 +27249,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap-icons\\icons\\stars.svg"
-    },
-    {
-      "Identity": "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorAppCodingDroplets\\wwwroot\\lib\\bootstrap-icons\\icons\\steam.svg",
-      "SourceId": "BlazorAppCodingDroplets",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorAppCodingDroplets\\wwwroot\\",
-      "BasePath": "_content/BlazorAppCodingDroplets",
-      "RelativePath": "lib/bootstrap-icons/icons/steam.svg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap-icons\\icons\\steam.svg"
     },
     {
       "Identity": "E:\\CSharp\\repos\\BlazorAppDemo\\BlazorAppCodingDroplets\\wwwroot\\lib\\bootstrap-icons\\icons\\stickies.svg",

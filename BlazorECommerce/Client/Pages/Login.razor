@@ -4,6 +4,7 @@
 @inject ILocalStorageService LocalStorage
 @inject NavigationManager NavigationManager
 @inject AuthenticationStateProvider AuthenticationStateProvider
+@inject ICartService CartService
 <PageTitle>Login</PageTitle>
 <h3>Login</h3>
 <EditForm Model="user" OnValidSubmit="HandleLogin">
@@ -44,6 +45,8 @@
             errorMessage = string.Empty;
             await LocalStorage.SetItemAsync("authToken", result.Data);
             await AuthenticationStateProvider.GetAuthenticationStateAsync();
+            await CartService.StoreCartItems(true);//参数true代表清空本地存储购物车
+            await CartService.GetCartItemsCount();
             //NavigationManager.NavigateTo("");//home page？
             //我们希望登录后跳转到登录前的页面
             NavigationManager.NavigateTo(returnUrl);

@@ -42,6 +42,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
+builder.Services.AddHttpContextAccessor();//通过HttpContextAccessor获取用户Id
 
 var app = builder.Build();
 app.UseSwaggerUI();
